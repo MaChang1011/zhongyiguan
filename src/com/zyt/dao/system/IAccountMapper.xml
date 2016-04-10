@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IAccountMapper">
+	<select id="findUserByUid" resultType="string">
+		SELECT 
+			u.ID
+		FROM T_ACCOUNT a
+		JOIN T_USER U ON A.MOBILE = U.MOBILE
+		WHERE a.UID = #{uid, jdbcType=VARCHAR}
+	</select>
+	<insert id="saveAccount"  useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.system.AccountEntity">
+		INSERT INTO T_ACCOUNT (
+			 UID, TOKEN, MOBILE
+		) VALUES ( 
+			 #{uid, jdbcType=VARCHAR},
+			 #{token, jdbcType=VARCHAR},
+			 #{mobile, jdbcType=VARCHAR}
+		)
+	</insert>
+</mapper>

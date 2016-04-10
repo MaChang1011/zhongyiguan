@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IModuleMapper">
+	<select id="findAll"
+		resultType="com.zyt.entity.system.ModuleEntity">
+		SELECT 
+			C.ID id,
+			C.NAME name,
+			C.URL url,
+			C.PARENT parent,
+			C.SORT sort
+		FROM T_MODULE C
+		ORDER BY C.PARENT, C.SORT
+	</select>
+	<select id="findCurrent" parameterType="string"
+		resultType="com.zyt.entity.system.ModuleEntity">
+		SELECT 
+		  tmp.ID id,
+		  tmp.NAME NAME,
+		  tmp.URL url,
+		  tmp.PARENT parent,
+		  tmp.SORT sort 
+		FROM
+		  (SELECT 
+		    p.ID,
+		    p.NAME,
+		    p.URL,
+		    p.PARENT,
+		    p.SORT 
+		  FROM
+		    T_MODULE C 
+		    JOIN t_module p 
+		      ON p.id = c.parent 
+		  WHERE c.flag = #{flag, jdbcType=VARCHAR}
+		  UNION
+		  ALL 
+		  SELECT 
+		    c.ID,
+		    c.NAME,
+		    c.URL,
+		    c.PARENT,
+		    c.SORT 
+		  FROM
+		    T_MODULE c 
+		  WHERE c.flag = #{flag, jdbcType=VARCHAR}) tmp 
+		ORDER BY tmp.parent
+	</select>
+</mapper>

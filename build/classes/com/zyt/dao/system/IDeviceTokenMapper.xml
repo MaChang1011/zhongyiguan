@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IDeviceTokenMapper">
+	<insert id="save" parameterType="com.zyt.entity.system.DeviceTokenEntity">
+		INSERT INTO T_DEVICE_TOKEN (
+			DEVICE_TOKEN, 
+			IS_PUSH
+		) VALUES (
+			#{deviceToken, jdbcType=VARCHAR},
+			#{isPush, jdbcType=INTEGER}
+		)
+	</insert>
+	<update id="update" parameterType="com.zyt.entity.system.DeviceTokenEntity">
+		UPDATE T_DEVICE_TOKEN SET IS_PUSH =#{isPush, jdbcType=INTEGER}
+		WHERE DEVICE_TOKEN = #{deviceToken, jdbcType=VARCHAR}
+	</update>
+	
+	<select id="findAll" resultType="string" parameterType="int">
+		SELECT DEVICE_TOKEN FROM T_DEVICE_TOKEN 
+		WHERE IS_PUSH = 1 
+		LIMIT #{start, jdbcType=INTEGER}, 50
+	</select>
+	
+	<select id="findAllCount" resultType="int">
+		SELECT COUNT(ID) FROM T_DEVICE_TOKEN
+		WHERE IS_PUSH = 1
+	</select>
+	
+	<select id="findByDeviceToken" parameterType="string"
+		 resultType="com.zyt.entity.system.DeviceTokenEntity">
+		SELECT 
+			ID id, 
+			DEVICE_TOKEN deviceToken, 
+			IS_PUSH isPush
+		FROM T_DEVICE_TOKEN 
+		WHERE DEVICE_TOKEN = #{deviceToken, jdbcType=VARCHAR}
+		LIMIT 1
+	</select>
+</mapper>

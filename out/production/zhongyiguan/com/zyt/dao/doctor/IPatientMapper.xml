@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyt.dao.doctor.IPatientMapper">
+	<select id="findById" parameterType="string"
+		resultType="com.zyt.entity.doctor.PatientEntity">
+		SELECT
+			ID id,
+			USERID userid,
+			Name name,
+			ADDRESS address,
+			DATE_FORMAT(PUBTIME,'%Y-%m-%d') pubtime,
+			IMAGES images,
+			DRUG drug,
+			Money money,
+			ORDERID orderid,
+			STATUS status,
+			STATUS_ZF status_zf,
+			AGE age,
+			SEX sex,
+			IS_HY is_hy,
+			IS_WY is_wy,
+			IS_FP is_fp,
+			IS_JZ is_jz,
+			IS_GF is_gf,
+			IS_PS is_ps,
+			TYPE type,
+			MOBILE mobile
+		FROM T_PATIENT
+		<where>
+			ID = #{id, jdbcType=INTEGER}
+		</where>
+	</select>
+
+	<select id="findAll" parameterType="hashmap"
+		resultType="com.zyt.entity.doctor.PatientEntity">
+		SELECT
+			p.ID id,
+			p.USERID userid,
+			p.Name name,
+			p.ADDRESS address,
+			p.PUBTIME pubtime,
+			p.IMAGES images,
+			p.DRUG drug,
+			p.Money money,
+			p.ORDERID orderid,
+			p.STATUS status,
+			p.STATUS_ZF status_zf,
+			p.AGE age,
+			p.SEX sex,
+			p.IS_HY is_hy,
+			p.IS_WY is_wy,
+			p.IS_FP is_fp,
+			p.IS_JZ is_jz,
+			p.IS_GF is_gf,
+			p.IS_PS is_ps,
+			p.TYPE type,
+			p.MOBILE mobile
+		FROM T_PATIENT p
+		JOIN T_USER u ON p.USERID = u.ID
+		<where>
+			<if test="images!=null and images!=''">
+				AND p.IMAGES = #{images, jdbcType=VARCHAR}
+			</if>
+			<if test="orderid!=null and orderid!=''">
+				AND p.ORDERID = #{orderid, jdbcType=VARCHAR}
+			</if>
+			<if test="status!=null and status!=''">
+				AND p.STATUS = #{status, jdbcType=INTEGER}
+			</if>
+			<if test="status_zf!=null and status_zf!=''">
+				AND p.STATUS_ZF = #{status_zf, jdbcType=INTEGER}
+			</if>
+			<if test="userid!=null and userid!=''">
+				AND p.USERID = #{userid, jdbcType=INTEGER}
+			</if>
+			<if test="type!=null and type!=''">
+				AND p.TYPE = #{type,jdbcType=INTEGER}
+			</if>
+			<if test="mobile!=null and mobile!=''">
+				AND p.MOBILE = #{mobile, jdbcType=VARCHAR}
+			</if>
+		</where>
+		ORDER BY p.PUBTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findAllIsPass" parameterType="hashmap"
+		resultType="com.zyt.entity.doctor.PatientEntity">
+		SELECT
+			p.ID id,
+			p.USERID userid,
+			p.Name name,
+			p.ADDRESS address,
+			p.PUBTIME pubtime,
+			p.IMAGES images,
+			p.DRUG drug,
+			p.Money money,
+			p.ORDERID orderid,
+			p.STATUS status,
+			p.STATUS_ZF status_zf,
+			p.AGE age,
+			p.SEX sex,
+			p.IS_HY is_hy,
+			p.IS_WY is_wy,
+			p.IS_FP is_fp,
+			p.IS_JZ is_jz,
+			p.IS_GF is_gf,
+			p.IS_PS is_ps,
+			p.TYPE type,
+			p.MOBILE mobile
+		FROM T_PATIENT p
+		JOIN T_USER u ON p.USERID = u.ID
+		WHERE p.STATUS = 1
+		ORDER BY p.PUBTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+
+	<insert id="saveCaseImageCount" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.PatientEntity">
+		INSERT INTO T_PATIENT (
+			USERID, CASE_IMAGE_COUNT
+		) VALUES (
+			#{userid, jdbcType=VARCHAR},
+			#{caseImageCount, jdbcType=INTEGER}
+		)
+	</insert>
+
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.PatientEntity">
+		INSERT INTO T_PATIENT (
+			USERID, NAME, ADDRESS, PUBTIME, IMAGES, DRUG, MONEY, ORDERID, STATUS, STATUS_ZF, AGE, SEX, IS_HY, IS_WY, IS_FP, IS_JZ, IS_GF, IS_PS, TYPE, MOBILE
+		) VALUES (
+			#{userid, jdbcType=VARCHAR},
+			#{name, jdbcType=VARCHAR},
+			#{address, jdbcType=VARCHAR},
+			#{pubtime, jdbcType=DATE},
+			#{images, jdbcType=VARCHAR},
+			#{drug, jdbcType=VARCHAR},
+			0,
+			#{orderid, jdbcType=VARCHAR},
+			0,
+			0,
+			#{age, jdbcType=INTEGER},
+			#{sex, jdbcType=VARCHAR},
+			#{is_hy, jdbcType=INTEGER},
+			#{is_wy, jdbcType=INTEGER},
+			#{is_fp, jdbcType=INTEGER},
+			#{is_jz, jdbcType=INTEGER},
+			#{is_gf, jdbcType=INTEGER},
+			#{is_ps, jdbcType=INTEGER},
+			#{type, jdbcType=INTEGER},
+			#{mobile, jdbcType=VARCHAR}
+		)
+	</insert>
+
+	<update id="update" parameterType="com.zyt.entity.doctor.PatientEntity">
+		UPDATE T_PATIENT
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="money!=null and money!=''">
+				MONEY = #{money, jdbcType=FLOAT},
+			</if>
+			<if test="status!=null and status!='' or status==0">
+				STATUS = #{status, jdbcType=INTEGER},
+			</if>
+			<if test="status_zf!=null and status_zf!='' or status_zf==0">
+				STATUS_ZF = #{status_zf, jdbcType=INTEGER},
+			</if>
+			<if test="orderid!=null and orderid!=''">
+				ORDERID = #{order, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+
+	<update id="updateCaseImageCount" parameterType="hashmap">
+		UPDATE T_PATIENT SET CASE_IMAGE_COUNT = #{caseImageCount, jdbcType=INTEGER}
+		WHERE USERID = #{userid, jdbcType=INTEGER}
+	</update>
+
+	<select id="getCaseImageCount" parameterType="string" resultType="string">
+		SELECT IF(CASE_IMAGE_COUNT,CASE_IMAGE_COUNT,0) AS ct FROM T_PATIENT
+		WHERE USERID = #{userid, jdbcType=INTEGER}
+	</select>
+
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			COUNT(p.ID)
+		FROM T_PATIENT p JOIN T_USER u ON p.USERID = u.ID
+		<where>
+			<if test="status!=null and status!=''">
+				p.STATUS = #{status, jdbcType=INTEGER}
+			</if>
+			<if test="userid!=null and userid!=''">
+				AND p.USERID = #{userid, jdbcType=INTEGER}
+			</if>
+		</where>
+	</select>
+
+	<delete id="delete" parameterType="string">
+		DELETE FROM T_PATIENT WHERE ID = #{id, jdbcType=INTEGER}
+	</delete>
+
+</mapper>

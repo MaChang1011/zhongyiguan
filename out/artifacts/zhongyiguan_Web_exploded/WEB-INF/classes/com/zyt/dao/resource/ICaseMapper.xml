@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.resource.ICaseMapper">
+	<select id="findById" parameterType="string"
+		resultType="com.zyt.entity.resource.CaseEntity">
+		SELECT 
+			ID id,
+			TITLE title,
+			CATEGORY category,
+			CONTENT content,
+			IMAGES images,
+			DATE_FORMAT(PUBTIME,'%Y-%m-%d') pubtime,
+			PUBUSER pubuser
+		FROM T_CASE
+		<where>
+			ID = #{id, jdbcType=INTEGER}
+		</where>
+	</select>
+
+	<select id="findAllBo" parameterType="hashmap"
+		resultType="com.zyt.bo.resource.CaseBo">
+		SELECT 
+			c.ID id,
+			c.TITLE title,
+			c.CATEGORY category,
+			c.CONTENT content,
+			c.IMAGES images,
+			c.PUBTIME pubtime,
+			u.NAME pubuser,
+			c.STATUS status,
+			u.TYPE
+		FROM T_CASE c
+		JOIN T_USER u ON c.PUBUSER = u.ID
+		<where>
+			<if test="category!=null and category!=''">
+				c.CATEGORY = #{category, jdbcType=INTEGER}
+			</if>
+			<if test="status!=null and status!=''">
+				AND c.STATUS = #{status, jdbcType=INTEGER}
+			</if>
+			<if test="pubuser!=null and pubuser!=''">
+				AND c.PUBUSER = #{pubuser, jdbcType=INTEGER}
+			</if>
+		</where>
+		ORDER BY c.PUBTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(c.ID)
+		FROM T_CASE c JOIN T_USER u ON c.PUBUSER = u.ID
+		<where>
+			<if test="status!=null and status!=''">
+				c.STATUS = #{status, jdbcType=INTEGER}
+			</if>
+			<if test="pubuser!=null and pubuser!=''">
+				AND c.PUBUSER = #{pubuser, jdbcType=INTEGER}
+			</if>
+		</where>
+	</select>
+	
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.resource.CaseEntity">
+		INSERT INTO T_CASE (
+			TITLE, CATEGORY, CONTENT, IMAGES, PUBTIME, PUBUSER, STATUS
+		) VALUES (
+			#{title, jdbcType=VARCHAR}, 
+			#{category, jdbcType=VARCHAR},
+			#{content, jdbcType=VARCHAR},
+			#{images, jdbcType=VARCHAR},
+			#{pubtime, jdbcType=DATE},
+			#{pubuser, jdbcType=INTEGER},
+			0
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.zyt.entity.resource.CaseEntity">
+		UPDATE T_CASE 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="title!=null and title!=''">
+				TITLE = #{title, jdbcType=VARCHAR},
+			</if>
+			<if test="category!=null and category!=''">
+				CATEGORY = #{category, jdbcType=VARCHAR},
+			</if>
+			<if test="content!=null and content!=''">
+				CONTENT = #{content, jdbcType=VARCHAR},
+			</if>
+			<if test="images!=null and images!=''">
+				IMAGES = #{images, jdbcType=VARCHAR},
+			</if>
+			<if test="status!=null and status!=''">
+				STATUS = #{status, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		DELETE FROM T_CASE WHERE ID = #{id, jdbcType=INTEGER}
+	</delete>
+</mapper>

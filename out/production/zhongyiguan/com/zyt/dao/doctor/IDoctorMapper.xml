@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.doctor.IDoctorMapper">
+	<select id="findById" parameterType="string"
+		resultType="com.zyt.entity.doctor.DoctorEntity">
+		SELECT
+			SEX sex,
+			CARD card,
+			COMPANY company,
+			JOB job,
+			TECH_TITLE techTitle,
+			DEPARTMENT department,
+			AGE age,
+			WORK_YEAR workYear,
+			GOOD_AT goodAt,
+			PROFILE profile
+		FROM T_DOCTOR
+		WHERE USERID = #{id, jdbcType=INTEGER}
+	</select>
+	
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.DoctorEntity">
+		INSERT INTO T_DOCTOR (
+			USERID, SEX, CARD, COMPANY, DEPARTMENT, JOB, TECH_TITLE, PROFILE,
+			AGE, WORK_YEAR, GOOD_AT
+		) VALUES (
+			#{userid, jdbcType=VARCHAR}, 
+			#{sex, jdbcType=VARCHAR},
+			#{card, jdbcType=VARCHAR},
+			#{company, jdbcType=VARCHAR},
+			#{department, jdbcType=VARCHAR},
+			#{job, jdbcType=VARCHAR},
+			#{techTitle, jdbcType=VARCHAR},
+			#{profile, jdbcType=VARCHAR},
+			#{age, jdbcType=INTEGER},
+			#{workYear, jdbcType=INTEGER},
+			#{goodAt, jdbcType=VARCHAR}
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.zyt.entity.doctor.DoctorEntity">
+		UPDATE T_DOCTOR 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="userid!=null and userid!=''">
+				USERID = #{userid, jdbcType=INTEGER},
+			</if>
+			<if test="sex!=null and sex!='' or sex==0">
+				SEX = #{sex, jdbcType=INTEGER},
+			</if>
+			<if test="card!=null and card!=''">
+				CARD = #{card, jdbcType=VARCHAR},
+			</if>
+			<if test="department!=null and department!=''">
+				DEPARTMENT = #{department, jdbcType=VARCHAR},
+			</if>
+			<if test="company!=null and company!=''">
+				COMPANY = #{company, jdbcType=VARCHAR},
+			</if>
+			<if test="job!=null and job!=''">
+				JOB = #{job, jdbcType=VARCHAR},
+			</if>
+			<if test="techTitle!=null and techTitle!=''">
+				TECH_TITLE = #{techTitle, jdbcType=VARCHAR},
+			</if>
+			<if test="profile!=null and profile!=''">
+				PROFILE = #{profile, jdbcType=VARCHAR},
+			</if>
+			<if test="age!=null and age!=''">
+				AGE = #{age, jdbcType=INTEGER},
+			</if>
+			<if test="workYear!=null and workYear!=''">
+				WORK_YEAR = #{workYear, jdbcType=INTEGER},
+			</if>
+			<if test="goodAt!=null and goodAt!=''">
+				GOOD_AT = #{goodAt, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE USERID = #{userid, jdbcType=INTEGER}
+	</update>
+	<select id="findDetailById" parameterType="string"
+		resultType="com.zyt.bo.doctor.DoctorBo">
+		SELECT
+			u.ID id,
+			d.SEX sex,
+			d.CARD card,
+			d.COMPANY company,
+			d.DEPARTMENT department,
+			d.JOB job,
+			d.TECH_TITLE techTitle,
+			d.PROFILE profile,
+			u.NAME name,
+			u.LEVEL level,
+			d.START_TIME startTime,
+			d.END_TIME endTime,
+			d.day_of_week dayOfWeek,
+			d.AGE age,
+			d.WORK_YEAR workYear,
+			d.GOOD_AT goodAt
+		FROM T_DOCTOR d
+		JOIN T_USER u on d.USERID = u.id
+		WHERE d.USERID = #{id, jdbcType=INTEGER}
+	</select>
+	<select id="findPageBo" parameterType="hashmap"
+		resultType="com.zyt.bo.doctor.DoctorBo">
+		SELECT
+			u.ID id,
+			d.SEX sex,
+			d.CARD card,
+			d.COMPANY company,
+			d.DEPARTMENT department,
+			d.JOB job,
+			d.TECH_TITLE techTitle,
+			u.HEAD head,
+			u.NAME name,
+			u.LEVEL level,
+			d.START_TIME startTime,
+			d.END_TIME endTime,
+			d.day_of_week dayOfWeek,
+			d.LOCATION location,
+			d.AGE age,
+			d.WORK_YEAR workYear,
+			d.GOOD_AT goodAt,
+			IF(tmp.FOLLOWS, tmp.FOLLOWS, 0) follows
+			<if test="userId!=null and userId!=''">
+				,IF(c.ID > 0, 1, 0) isCollection
+			</if>
+		FROM T_USER u
+		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
+		LEFT JOIN (
+			SELECT c.RECORD_ID, COUNT(c.ID) AS FOLLOWS FROM T_COLLECTION c WHERE c.TYPE = 3 GROUP BY  c.TYPE,  c.RECORD_ID
+		) tmp ON u.ID=tmp.RECORD_ID
+		<if test="online!=null and online!=''">
+			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
+		</if>
+		<if test="userId!=null and userId!=''">
+			LEFT JOIN T_COLLECTION c ON u.ID = c.RECORD_ID
+			AND c.TYPE = 3 AND c.USER_ID= #{userId, jdbcType=INTEGER}
+		</if>
+		WHERE u.TYPE = 1
+		AND d.START_TIME is not null
+		AND d.END_TIME is not null
+		AND d.DAY_OF_WEEK is not null
+		<if test="online!=null and online!=''">
+			AND info.STATUS = 1
+		</if>
+		ORDER BY u.REGTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(u.ID)
+		FROM T_USER u
+		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
+		<if test="online!=null and online!=''">
+			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
+		</if>
+		WHERE u.TYPE=1
+		AND d.START_TIME is not null
+		AND d.END_TIME is not null
+		AND d.DAY_OF_WEEK is not null
+		<if test="online!=null and online!=''">
+			AND info.STATUS = 1
+		</if>
+	</select>
+	
+	<update id="updateReservation" parameterType="com.zyt.bo.doctor.ReservationBo">
+		UPDATE T_DOCTOR 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="startTime!=null and startTime!=''">
+				START_TIME = #{startTime, jdbcType=VARCHAR},
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				END_TIME = #{endTime, jdbcType=VARCHAR},
+			</if>
+			<if test="dayOfWeek!=null and dayOfWeek!=''">
+				DAY_OF_WEEK = #{dayOfWeek, jdbcType=VARCHAR},
+			</if>
+			<if test="location!=null and location!=''">
+				LOCATION = #{location, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE USERID = #{userid, jdbcType=INTEGER}
+	</update>
+	<select id="findReservation" parameterType="string"
+		resultType="com.zyt.bo.doctor.ReservationBo">
+		SELECT
+			START_TIME startTime,
+			END_TIME endTime,
+			DAY_OF_WEEK dayOfWeek,
+			LOCATION location
+		FROM T_DOCTOR
+		WHERE USERID = #{id, jdbcType=INTEGER}
+	</select>
+	
+	
+	<select id="findNearPageBo" parameterType="hashmap"
+		resultType="com.zyt.bo.doctor.DoctorNearBo">
+		SELECT 
+				TMP.ID id,
+				TMP.SEX sex,
+				TMP.CARD card,
+				TMP.COMPANY company,
+				TMP.DEPARTMENT department,
+				TMP.JOB job,
+				TMP.TECH_TITLE techTitle,
+				TMP.AGE age,
+				TMP.WORK_YEAR workYear,
+				TMP.GOOD_AT goodAt,
+				TMP.HEAD head,
+				TMP.NAME name,
+				TMP.LEVEL level,
+				TMP.START_TIME startTime,
+				TMP.END_TIME endTime,
+				TMP.day_of_week dayOfWeek,
+				TMP.LOCATION location,
+				TMP.distanceFloat
+		FROM (
+			SELECT
+				u.ID,
+				d.SEX,
+				d.CARD,
+				d.COMPANY,
+				d.DEPARTMENT,
+				d.JOB,
+				d.TECH_TITLE,
+				d.AGE,
+				d.WORK_YEAR,
+				d.GOOD_AT,
+				u.HEAD,
+				u.NAME ,
+				u.LEVEL ,
+				d.START_TIME ,
+				d.END_TIME,
+				d.DAY_OF_WEEK,
+				d.LOCATION,
+				u.REGTIME,
+				getDistance(info.LONGITUDE, info.LATITUDE, 
+					#{longitude, jdbcType=DOUBLE}, 
+					#{latitude, jdbcType=DOUBLE}) distanceFloat
+			FROM T_DOCTOR d
+			JOIN T_USER u on d.USERID = u.id
+			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = d.USERID
+		) TMP
+		ORDER BY TMP.distanceFloat, TMP.REGTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	<select id="findNearPageBoCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			COUNT(d.ID)
+		FROM T_DOCTOR d
+		JOIN T_USER u on d.USERID = u.id
+		JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = d.USERID
+	</select>
+</mapper>

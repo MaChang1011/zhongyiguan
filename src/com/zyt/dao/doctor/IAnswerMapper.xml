@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.doctor.IAnswerMapper">
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.AnswerEntity">
+		INSERT INTO T_ANSWER (
+			DIAGNOSE_ID, MSG_FROM, MSG_TO, MSG, CREATE_TIME
+		) VALUES (
+			#{diagnoseId, jdbcType=INTEGER}, 
+			#{msgFrom, jdbcType=INTEGER},
+			#{msgTo, jdbcType=INTEGER},
+			#{msg, jdbcType=VARCHAR},
+			#{createTime, jdbcType=DATE}
+		)
+	</insert>
+	
+	<select id="findMsgPage" parameterType="hashmap"
+		resultType="com.zyt.entity.doctor.AnswerEntity">
+		SELECT
+			a.ID id,
+			a.DIAGNOSE_ID diagnoseId,
+			a.MSG_FROM msgFrom,
+			a.MSG_TO msgTo,
+			a.MSG msg,
+			a.CREATE_TIME createTime
+		FROM T_ANSWER a
+		<where>
+			a.DIAGNOSE_ID = #{diagnoseId, jdbcType=INTEGER}
+		</where>
+		ORDER BY a.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+
+	<select id="findMsgPageCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			COUNT(a.ID)
+		FROM T_ANSWER a
+		<where>
+			a.DIAGNOSE_ID = #{diagnoseId, jdbcType=INTEGER}
+		</where>
+	</select>
+</mapper>

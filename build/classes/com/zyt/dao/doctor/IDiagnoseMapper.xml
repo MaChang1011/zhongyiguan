@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.doctor.IDiagnoseMapper">
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.DiagnoseEntity">
+		INSERT INTO T_DIAGNOSE (
+			PATIENT_ID, QUESTION, CREATE_TIME
+		) VALUES (
+			#{patientId, jdbcType=INTEGER}, 
+			#{question, jdbcType=VARCHAR},
+			#{createTime, jdbcType=DATE}
+		)
+	</insert>
+	<update id="update" parameterType="com.zyt.entity.doctor.DiagnoseEntity">
+		UPDATE T_DIAGNOSE 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="question!=null and question!=''">
+				QUESTION = #{question, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+	
+	<select id="findAllBo" parameterType="hashmap" 
+		resultType="com.zyt.bo.doctor.DiagnoseBo">
+		SELECT
+			d.ID id,
+			u.NICKNAME nickname,
+			u.HEAD head,
+			d.QUESTION question,
+			(SELECT COUNT(a.ID) 
+				FROM T_ANSWER a 
+				WHERE a.MSG_FROM=d.ID 
+				AND a.MSG_FROM IS NOT NULL
+			) answers,
+			d.CREATE_TIME createTime
+		FROM T_DIAGNOSE d
+		JOIN T_USER u on d.PATIENT_ID = u.ID
+		WHERE u.TYPE=0
+		<if test="userid!=null and userid!=''">
+			AND d.PATIENT_ID = #{userid, jdbcType=INTEGER}
+		</if>
+		ORDER BY d.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	<select id="findAllBoCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			COUNT(d.ID)
+		FROM T_DIAGNOSE d
+		JOIN T_USER u on d.PATIENT_ID = u.ID
+		WHERE u.TYPE=0
+		<if test="userid!=null and userid!=''">
+			AND d.PATIENT_ID = #{userid, jdbcType=INTEGER}
+		</if>
+	</select>
+</mapper>

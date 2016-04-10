@@ -1,0 +1,25 @@
+.mp10 {
+	margin-top:10px;
+}
+.mp15 {
+	margin-top:15px;
+}
+.tc  {
+	text-align:center;
+}
+.plr5 {
+	padding-left:5px;
+	padding-right:5px;
+}
+.wh100 {
+	width:100px;
+	height:100px;
+}
+.title {
+	font-weight:bold;
+	font-size:14px;
+}
+.t {
+	font-weight:bold;
+	padding-right:10px;
+}

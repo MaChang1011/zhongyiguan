@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/zyt/api/doctor/DiagnoseApi.java=UTF-8
+encoding//src/com/zyt/api/resource/CaseApi.java=UTF-8
+encoding//src/com/zyt/api/user/UserApi.java=UTF-8
+encoding//src/com/zyt/base/AjaxResult.java=UTF-8
+encoding//src/com/zyt/service/doctor/impl/CollectionManagerImpl.java=UTF-8
+encoding//src/com/zyt/service/doctor/impl/CommentManagerImpl.java=UTF-8
+encoding//src/com/zyt/service/doctor/impl/DoctorManagerImpl.java=UTF-8
+encoding//src/com/zyt/service/doctor/impl/ReservationManagerImpl.java=UTF-8
+encoding//src/com/zyt/service/system/impl/AccountManagerImpl.java=UTF-8
+encoding//src/com/zyt/service/system/impl/UserManagerImpl.java=UTF-8

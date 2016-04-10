@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.doctor.ICollectionMapper">
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.CollectionEntity">
+		INSERT INTO T_COLLECTION (
+			USER_ID, TYPE, RECORD_ID, CREATE_TIME
+		) VALUES (
+			#{userId, jdbcType=INTEGER}, 
+			#{type, jdbcType=INTEGER},
+			#{recordId, jdbcType=INTEGER},
+			#{createTime, jdbcType=DATE}
+		)
+	</insert>
+	
+	<delete id="deleteByUnionKey" parameterType="com.zyt.entity.doctor.CollectionEntity">
+		DELETE FROM T_COLLECTION 
+		WHERE 
+			USER_ID = #{userId, jdbcType=INTEGER}
+			AND TYPE = #{type, jdbcType=INTEGER}
+			AND RECORD_ID = #{recordId, jdbcType=INTEGER}
+	</delete>
+	
+	<delete id="delete" parameterType="int">
+		DELETE FROM T_COLLECTION WHERE ID = #{id, jdbcType=INTEGER}
+	</delete>
+	
+	<select id="findByUnionKey"  parameterType="com.zyt.entity.doctor.CollectionEntity"
+		resultType="int">
+		SELECT COUNT(1) FROM T_COLLECTION 
+		WHERE USER_ID = #{userId, jdbcType=INTEGER}
+			AND TYPE = #{type, jdbcType=INTEGER}
+			AND RECORD_ID = #{recordId, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findProductPage" parameterType="hashmap"
+		resultType="com.zyt.bo.company.ProductBo">
+		SELECT 
+			p.ID id,
+			p.TITLE title,
+			p.NAME name,
+			p.STANDARD standard,
+			p.IMAGE image,
+			p.PUBTIME pubtime,
+			1 isCollection
+		FROM T_PRODUCT p 
+		JOIN T_COLLECTION c
+		ON p.ID = c.RECORD_ID
+		WHERE c.TYPE = 1 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+		ORDER BY c.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findProductPageCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(p.ID)
+		FROM T_PRODUCT p 
+		JOIN T_COLLECTION c
+		ON p.ID = c.RECORD_ID
+		WHERE c.TYPE = 1 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+	</select>
+	
+	
+	<select id="findMessagePage" parameterType="hashmap"
+		resultType="com.zyt.bo.company.MessageBo">
+		SELECT 
+			m.ID id,
+			m.TITLE title,
+			m.IMAGE image,
+			m.PUBTIME pubtime,
+			m.CONTENT content,
+			m.ORIGIN origin,
+			1 isCollection
+		FROM T_MESSAGE m
+		JOIN T_COLLECTION c
+		ON m.ID = c.RECORD_ID
+		WHERE c.TYPE = 2 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+		ORDER BY c.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	<select id="findMessagePageCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(m.ID)
+		FROM T_MESSAGE m JOIN T_COLLECTION c
+		ON m.ID = c.RECORD_ID
+		WHERE c.TYPE = 2 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+	</select>
+	
+	
+	<select id="findDoctorPage" parameterType="hashmap"
+		resultType="com.zyt.bo.doctor.DoctorBo">
+		SELECT
+			u.ID id,
+			d.SEX sex,
+			d.CARD card,
+			d.COMPANY company,
+			d.DEPARTMENT department,
+			d.JOB job,
+			u.HEAD head,
+			u.NAME name,
+			u.LEVEL level,
+			d.START_TIME startTime,
+			d.END_TIME endTime,
+			d.day_of_week dayOfWeek,
+			d.LOCATION location,
+			1 isCollection
+		FROM T_DOCTOR d
+		JOIN T_USER u ON d.USERID = u.id
+		JOIN T_COLLECTION c ON u.ID = c.RECORD_ID
+		WHERE c.TYPE = 3 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+		ORDER BY c.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	<select id="findDoctorPageCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			count(d.ID)
+		FROM T_DOCTOR d
+		JOIN T_USER u ON d.USERID = u.id
+		JOIN T_COLLECTION c ON d.ID = c.RECORD_ID
+		WHERE c.TYPE = 3 AND c.USER_ID = #{userId, jdbcType=INTEGER} 
+	</select>
+</mapper>

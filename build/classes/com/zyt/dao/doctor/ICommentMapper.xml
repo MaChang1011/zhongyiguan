@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.doctor.ICommentMapper">
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.doctor.CommentEntity">
+		INSERT INTO T_COMMENT (
+			DOCTOR_ID, PATIENT_ID, COMMENT, COMMENT_LEVEL, CREATE_TIME
+		) VALUES (
+			#{doctorId, jdbcType=INTEGER}, 
+			#{patientId, jdbcType=INTEGER},
+			#{comment, jdbcType=VARCHAR},
+			#{commentLevel, jdbcType=INTEGER},
+			#{createTime, jdbcType=DATE}
+		)
+	</insert>
+	
+	<select id="findPage" parameterType="hashmap"
+		resultType="com.zyt.bo.doctor.CommentBo">
+		SELECT
+			c.ID id,
+			c.COMMENT comment,
+			c.COMMENT_LEVEL commentLevel,
+			u.NICKNAME nickname,
+			u.HEAD head
+		FROM T_COMMENT c
+		JOIN T_USER u ON c.PATIENT_ID = u.ID
+		<where>
+			<choose>
+				<when test="type==1">
+					c.DOCTOR_ID = #{userId, jdbcType=INTEGER}
+				</when>
+				<when test="type==0">
+					c.PATIENT_ID = #{userId, jdbcType=INTEGER}
+				</when>
+			</choose>
+		</where>
+		ORDER BY c.CREATE_TIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+
+	<select id="findPageCount" parameterType="hashmap"
+		resultType="int">
+		SELECT
+			COUNT(c.ID)
+		FROM T_COMMENT c
+		<where>
+			<choose>
+				<when test="type==1">
+					c.DOCTOR_ID = #{doctorId, jdbcType=INTEGER}
+				</when>
+				<when test="type==0">
+					AND c.PATIENT_ID = #{patientId, jdbcType=INTEGER}
+				</when>
+			</choose>
+		</where>
+	</select>
+</mapper>

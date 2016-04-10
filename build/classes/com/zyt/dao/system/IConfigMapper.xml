@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IConfigMapper">
+	<select id="findByFlags" 
+		resultType="com.zyt.entity.system.ConfigEntity">
+		SELECT 
+			ID id,
+			FLAG flag,
+			TITLE title,
+			CONTENT content
+		FROM T_CONFIG
+		WHERE FLAG IN
+		<foreach collection="array" index="index" item="flag" open="(" separator="," close=")">  
+              #{flag, jdbcType=VARCHAR}
+    	</foreach>
+	</select>
+	
+	<select id="findById" 
+		resultType="com.zyt.entity.system.ConfigEntity">
+		SELECT 
+			ID id,
+			FLAG flag,
+			TITLE title,
+			CONTENT content
+		FROM T_CONFIG
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</select>
+	
+	<insert id="save" 
+		useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.system.ConfigEntity">
+		INSERT INTO T_CONFIG (
+			TITLE, FLAG, CONTENT
+		) VALUES (
+			#{title, jdbcType=VARCHAR}, 
+			#{flag, jdbcType=VARCHAR}, 
+			#{content, jdbcType=VARCHAR}
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.zyt.entity.system.ConfigEntity">
+		UPDATE T_CONFIG 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="title!=null and title!=''">
+				TITLE = #{title, jdbcType=VARCHAR},
+			</if>
+			<if test="content!=null and content!=''">
+				CONTENT = #{content, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+</mapper>

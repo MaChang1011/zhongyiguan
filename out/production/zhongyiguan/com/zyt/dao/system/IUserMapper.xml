@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IUserMapper">
+	<select id="findById" parameterType="string"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NICKNAME nickname,
+			HEAD head,
+			PASSWORD password,
+			MOBILE mobile,
+			TYPE type,
+			CHAT_NOTI chatNoti,
+			MSG_NOTI msgNoti,
+			REGTIME regtime,
+			AGE age,
+			SEX sex
+		FROM T_USER
+		<where>
+			ID = #{id, jdbcType=VARCHAR}
+		</where>
+	</select>
+	
+	<select id="findUserLogin" parameterType="com.zyt.entity.system.UserEntity"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NAME name,
+			TYPE type,
+			NICKNAME nickname,
+			PASSWORD password
+		FROM T_USER
+		<where>
+			<choose>
+				<when test="mobile!=null and mobile!=''">
+					MOBILE = #{mobile, jdbcType=VARCHAR}
+				</when>
+				<otherwise>
+					NICKNAME = #{nickname, jdbcType=VARCHAR}
+				</otherwise>
+			</choose>
+			AND PASSWORD = #{password, jdbcType=VARCHAR}
+		</where>
+	</select>
+	
+	<update id="updatePwd" parameterType="hashmap">
+		UPDATE T_USER SET PASSWORD=#{newPwd, jdbcType=VARCHAR}
+		WHERE PASSWORD = #{oldPwd, jdbcType=VARCHAR} 
+		AND ID = #{id, jdbcType=INTEGER}
+	</update>
+	
+	<select id="findByCond" parameterType="hashmap"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NAME name,
+			TYPE type,
+			NICKNAME nickname,
+			PASSWORD password
+		FROM T_USER
+		<where>
+			<if test="nickname!=null and nickname!=''">
+				NICKNAME = #{nickname, jdbcType=VARCHAR}
+			</if>
+			<if test="id!=null and id!=''">
+				AND ID = #{id, jdbcType=VARCHAR}
+			</if>
+			<if test="password!=null and password!=''">
+				AND PASSWORD = #{password, jdbcType=VARCHAR}
+			</if>
+			<if test="mobile!=null and mobile!=''">
+				AND MOBILE = #{mobile, jdbcType=VARCHAR}
+			</if>
+		</where>
+	</select>
+	
+	<select id="findAll" parameterType="hashmap"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NICKNAME nickname,
+			NAME name,
+			PASSWORD password,
+			MOBILE mobile,
+			TYPE type,
+			REGTIME regtime,
+			AGE age,
+			SEX sex
+		FROM T_USER
+		ORDER BY TYPE, REGTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(ID)
+		FROM T_USER
+	</select>
+	
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.system.UserEntity">
+		INSERT INTO T_USER (
+			 NICKNAME, MOBILE, PASSWORD, TYPE, REGTIME
+		) VALUES (
+		    #{nickname, jdbcType=VARCHAR},
+			#{mobile, jdbcType=VARCHAR},
+			#{password, jdbcType=VARCHAR},
+			#{type, jdbcType=INTEGER},
+			#{regtime, jdbcType=DATE}
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.zyt.entity.system.UserEntity">
+		UPDATE T_USER 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="nickname!=null and nickname!=''">
+				nickname = #{nickname, jdbcType=VARCHAR},
+			</if>
+			<if test="head!=null and head!=''">
+				head = #{head, jdbcType=VARCHAR},
+			</if>
+			<if test="name!=null and name!=''">
+				name = #{name, jdbcType=VARCHAR},
+			</if>
+			<if test="age!=null and age!='' and age!=0">
+				AGE = #{age, jdbcType=INTEGER},
+			</if>
+			<if test="sex!=null and sex!=''">
+				SEX = #{sex, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+	
+	
+	<select id="findPatientsId" parameterType="int" resultType="string">
+		SELECT ID FROM T_USER WHERE TYPE = 0
+		LIMIT #{start, jdbcType=INTEGER}, 20
+	</select>
+	
+	<select id="findPatientsIdCount" resultType="int">
+		SELECT COUNT(ID) FROM T_USER WHERE TYPE = 0
+	</select>
+
+</mapper>

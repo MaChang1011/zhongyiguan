@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>      
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.zyt.dao.system.IUserMapper">
+	<select id="findById" parameterType="string"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NICKNAME nickname,
+			name name,
+			PASSWORD password,
+			MOBILE mobile,
+			COMPANY company,
+			JOB job,
+			SEX sex,
+			CARD card,
+			TYPE type,
+			REGTIME regtime
+		FROM T_USER
+		<where>
+			ID = #{id, jdbcType=VARCHAR}
+		</where>
+	</select>
+	
+	<select id="findByCond" parameterType="hashmap"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NICKNAME nickname,
+			NAME name,
+			PASSWORD password
+		FROM T_USER
+		<where>
+			<if test="nickname!=null and nickname!=''">
+				NICKNAME = #{nickname, jdbcType=VARCHAR}
+			</if>
+			<if test="id!=null and id!=''">
+				AND ID = #{id, jdbcType=VARCHAR}
+			</if>
+			<if test="password!=null and password!=''">
+				AND PASSWORD = #{password, jdbcType=VARCHAR}
+			</if>
+			<if test="mobile!=null and mobile!=''">
+				AND MOBILE = #{mobile, jdbcType=VARCHAR}
+			</if>
+		</where>
+	</select>
+	
+	<select id="findAll" parameterType="hashmap"
+		resultType="com.zyt.entity.system.UserEntity">
+		SELECT 
+			ID id,
+			NICKNAME nickname,
+			name name,
+			PASSWORD password,
+			MOBILE mobile,
+			COMPANY company,
+			JOB job,
+			SEX sex,
+			CARD card,
+			TYPE type,
+			REGTIME regtime
+		FROM T_USER
+		ORDER BY TYPE, REGTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+	
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(ID)
+		FROM T_USER
+	</select>
+	
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"
+		parameterType="com.zyt.entity.system.UserEntity">
+		INSERT INTO T_USER (
+			MOBILE, PASSWORD, TYPE, REGTIME
+		) VALUES (
+			#{mobile, jdbcType=VARCHAR}, 
+			#{password, jdbcType=VARCHAR},
+			#{type, jdbcType=INTEGER},
+			#{regtime, jdbcType=DATE}
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.zyt.entity.system.UserEntity">
+		UPDATE T_USER 
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="nickname!=null and nickname!=''">
+				nickname = #{nickname, jdbcType=VARCHAR},
+			</if>
+			<if test="password!=null and password!=''">
+				password = #{password, jdbcType=VARCHAR},
+			</if>
+			<if test="name!=null and name!=''">
+				name = #{name, jdbcType=VARCHAR},
+			</if>
+			<if test="head!=null and head!=''">
+				head = #{head, jdbcType=VARCHAR},
+			</if>
+			<if test="mobile!=null and mobile!=''">
+				mobile = #{mobile, jdbcType=VARCHAR},
+			</if>
+			<if test="company!=null and company!=''">
+				company = #{company, jdbcType=VARCHAR},
+			</if>
+			<if test="job!=null and job!=''">
+				job = #{job, jdbcType=VARCHAR},
+			</if>
+			<if test="sex!=null and sex!=''">
+				sex = #{sex, jdbcType=INTEGER},
+			</if>
+			<if test="card!=null and card!=''">
+				card = #{card, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE ID = #{id, jdbcType=INTEGER}
+	</update>
+</mapper>
