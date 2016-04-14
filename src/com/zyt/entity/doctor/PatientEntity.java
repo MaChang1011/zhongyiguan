@@ -5,9 +5,10 @@ import java.sql.Timestamp;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zyt.base.BaseEntity;
 
+
 /**
  * @author ljw
- * @Date 2016Äê3ÔÂ12ÈÕ
+ * @Date 2016ï¿½ï¿½3ï¿½ï¿½12ï¿½ï¿½
  * @Project zhongyiguan
  * @Version 1.0
  */
@@ -15,29 +16,29 @@ public class PatientEntity
   extends BaseEntity
 {
   protected int id;
-  
-  private int userid;
-  
+
+	private int userid;
+
   private String name;
-  
+
   private String address;
 
   private Timestamp pubtime;
-  
+
   private String images;
-  //Ò©Æ·×Ö·û´®
+  //Ò©Æ·ï¿½Ö·ï¿½ï¿½ï¿½
   private String drug;
-  
+
   private float money;
-  //¶©µ¥ºÅ
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   private String orderid;
-  //ÉóºË×´Ì¬
+  //ï¿½ï¿½ï¿½×´Ì¬
   private int status;
-  //Ö§¸¶×´Ì¬
+  //Ö§ï¿½ï¿½×´Ì¬
   private int status_zf;
 
   private int age;
-  
+
   private String sex;
   
   private int is_hy;
@@ -52,10 +53,10 @@ public class PatientEntity
   
   private int is_ps;
   
-  //Çø·ÖÊäÈë»òÉÏ´«
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½
   private int type;
   
-  //µç»°ºÅÂë
+  //ï¿½ç»°ï¿½ï¿½ï¿½ï¿½
   private String mobile;
 
   @JsonIgnore

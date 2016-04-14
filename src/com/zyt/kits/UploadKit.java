@@ -40,7 +40,7 @@ public class UploadKit
     return rtnPath;
   }
   
-  //���ļ��ϴ�
+
   private static String MultipartFileUpload(HttpServletRequest request, String userid, MultipartFile[] multipartFiles)
   {
     String rtnPath = "";

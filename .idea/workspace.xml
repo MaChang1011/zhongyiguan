@@ -2,319 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b692f0e5-465b-4e26-9a20-7075233b03e9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/haoxinren_APNs Development.p12" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/haoxinren_APNs Production.p12" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/auth/AuthAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/auth/AuthAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/auth/IndexAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/auth/IndexAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/comm/CommAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/comm/CommAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/company/MessageAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/company/MessageAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/company/ProductAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/company/ProductAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/doctor/RecordAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/doctor/RecordAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/doctor/ReservationAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/doctor/ReservationAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/resource/PatientAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/resource/PatientAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/system/ProfileAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/system/ProfileAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/action/system/UserAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/action/system/UserAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/BaseApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/BaseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/company/MessageApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/company/MessageApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/company/ProductApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/company/ProductApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/company/ProfileApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/company/ProfileApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/CommentApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/CommentApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/DiagnoseApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/DiagnoseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/DoctorApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/DoctorApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/PatientApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/PatientApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/ReservationApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/doctor/ReservationApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/resource/CaseApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/resource/CaseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/AccountApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/AccountApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/ChatApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/ChatApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/CollectionApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/CollectionApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/DeviceApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/DeviceApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/UserApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/UserApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/AjaxResult.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/AjaxResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/ApiResult.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/ApiResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/BaseAction.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/BaseAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/BaseEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/BaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/IBaseManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/IBaseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/IBaseMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/IBaseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/PageQuery.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/PageQuery.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/base/shiro/MyRealm.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/base/shiro/MyRealm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/company/MessageBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/company/MessageBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/company/ProductBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/company/ProductBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/CommentBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/CommentBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DiagnoseBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DiagnoseBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DoctorBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DoctorBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DoctorNearBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/DoctorNearBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/ReservationBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/ReservationBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/RvtUserBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/doctor/RvtUserBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/AddressBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/AddressBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/CaseBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/CaseBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/PatientBo.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/bo/resource/PatientBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$1.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$2.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$3.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$4.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/JerseyUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatConstants.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatException.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatExceptionEnum.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/ChatExceptionEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/HTTPMethod.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/HTTPMethod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/PropertiesUtils.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/PropertiesUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/Roles.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/comm/Roles.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/ClientSecretCredential.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/ClientSecretCredential.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Credential$GrantType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Credential$GrantType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Credential.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Credential.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/EndPoints.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/EndPoints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Token.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/chat/vo/Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/AduitStatus.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/AduitStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/ApiStatus.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/ApiStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/CaseType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/CaseType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/ChatStatus.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/ChatStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/CollectionType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/CollectionType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/CommentLevelType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/CommentLevelType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/DiagnoseStatus.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/DiagnoseStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/ReservationType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/ReservationType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/cons/UserType.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/cons/UserType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/company/IMessageMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/company/IMessageMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/company/IProductMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/company/IProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IAnswerMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IAnswerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/ICollectionMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/ICollectionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/ICommentMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/ICommentMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDiagnoseMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDiagnoseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDoctorInfoMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDoctorInfoMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDoctorMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IDoctorMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IPatientMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IPatientMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IReservationMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/doctor/IReservationMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/resource/IAddressMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/resource/IAddressMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/resource/ICaseMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/resource/ICaseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IAccountMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IAccountMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IConfigMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IConfigMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IDeviceTokenMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IDeviceTokenMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IModuleMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IModuleMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/company/MessageEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/company/MessageEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/company/ProductEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/company/ProductEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/AnswerEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/AnswerEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/CollectionEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/CollectionEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/CommentEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DiagnoseEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DiagnoseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DoctorEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DoctorEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DoctorInfoEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/DoctorInfoEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/PatientEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/PatientEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/ReservationEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/doctor/ReservationEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/AddressEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/AddressEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/CaseEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/CaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/DrugEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/resource/DrugEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/AccountEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/AccountEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/ConfigEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/ConfigEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/DeviceTokenEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/DeviceTokenEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/ModuleEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/ModuleEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/UserEntity.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/entity/system/UserEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/http/Http.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/http/Http.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/http/HttpCallback.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/http/HttpCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/http/HttpKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/http/HttpKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/ApnsKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/ApnsKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/CollectionKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/CollectionKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/HtmlKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/HtmlKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/JsonObjectMapper$1.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/JsonObjectMapper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/JsonObjectMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/JsonObjectMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/MD5Kit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/MD5Kit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/ModuleEnum.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/ModuleEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/RegKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/RegKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/StrKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/StrKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/kits/UploadKit.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/kits/UploadKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/Jpush/JpushService.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/Jpush/JpushService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/IChatManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/IChatManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/impl/BaseChatManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/impl/BaseChatManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/impl/ChatManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/chat/impl/ChatManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/company/IMessageManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/company/IMessageManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/company/IProductManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/company/IProductManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/company/impl/MessageManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/company/impl/MessageManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/company/impl/ProductManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/company/impl/ProductManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IAnswerManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IAnswerManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/ICollectionManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/ICollectionManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/ICommentManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/ICommentManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDiagnoseManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDiagnoseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDoctorInfoManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDoctorInfoManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDoctorManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IDoctorManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IPatientManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IPatientManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IReservationManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/IReservationManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/AnswerManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/AnswerManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/CollectionManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/CollectionManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/CommentManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/CommentManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DiagnoseManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DiagnoseManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DoctorInfoManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DoctorInfoManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DoctorManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/DoctorManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/PatientManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/PatientManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/ReservationManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/doctor/impl/ReservationManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/resource/ICaseManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/resource/ICaseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/resource/impl/CaseManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/resource/impl/CaseManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IAccountManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IAccountManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IConfigManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IDeviceTokenManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IDeviceTokenManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IModuleManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IModuleManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IUserManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IUserManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/AccountManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/AccountManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/ConfigManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/ConfigManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/DeviceManagerImpl$1.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/DeviceManagerImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/DeviceManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/DeviceManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/ModuleManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/ModuleManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/UserManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/UserManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/auth/AuthAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/auth/AuthAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/auth/IndexAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/auth/IndexAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/comm/CommAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/comm/CommAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/company/MessageAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/company/MessageAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/company/ProductAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/company/ProductAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/doctor/RecordAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/doctor/RecordAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/doctor/ReservationAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/doctor/ReservationAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/resource/PatientAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/resource/PatientAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/system/ProfileAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/system/ProfileAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/system/UserAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/action/system/UserAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/BaseApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/BaseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/MessageApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/MessageApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/ProductApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/ProductApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/ProfileApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/company/ProfileApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/CommentApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/CommentApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/DiagnoseApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/DiagnoseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/DoctorApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/DoctorApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/PatientApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/PatientApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/ReservationApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/doctor/ReservationApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/resource/CaseApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/resource/CaseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/AccountApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/AccountApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/ChatApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/ChatApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/CollectionApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/CollectionApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/DeviceApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/DeviceApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/UserApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/UserApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/AjaxResult.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/AjaxResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/ApiResult.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/ApiResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/BaseAction.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/BaseAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/BaseEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/BaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/IBaseManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/IBaseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/IBaseMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/IBaseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/PageQuery.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/PageQuery.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/shiro/MyRealm.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/base/shiro/MyRealm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/company/MessageBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/company/MessageBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/company/ProductBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/company/ProductBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/CommentBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/CommentBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DiagnoseBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DiagnoseBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DoctorBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DoctorBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DoctorNearBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/DoctorNearBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/ReservationBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/ReservationBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/RvtUserBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/doctor/RvtUserBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/AddressBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/AddressBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/CaseBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/CaseBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/PatientBo.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/bo/resource/PatientBo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$1.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$2.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$3.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$4.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/JerseyUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatConstants.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatException.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatExceptionEnum.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/ChatExceptionEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/HTTPMethod.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/HTTPMethod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/PropertiesUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/PropertiesUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/Roles.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/comm/Roles.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/ClientSecretCredential.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/ClientSecretCredential.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Credential$GrantType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Credential$GrantType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Credential.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Credential.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/EndPoints.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/EndPoints.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Token.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/chat/vo/Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/AduitStatus.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/AduitStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ApiStatus.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ApiStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CaseType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CaseType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ChatStatus.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ChatStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CollectionType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CollectionType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CommentLevelType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/CommentLevelType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/DiagnoseStatus.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/DiagnoseStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ReservationType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/ReservationType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/UserType.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/cons/UserType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/company/IMessageMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/company/IMessageMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/company/IProductMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/company/IProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IAnswerMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IAnswerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/ICollectionMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/ICollectionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/ICommentMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/ICommentMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDiagnoseMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDiagnoseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDoctorInfoMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDoctorInfoMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDoctorMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IDoctorMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IPatientMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IPatientMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IReservationMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/doctor/IReservationMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/resource/IAddressMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/resource/IAddressMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/resource/ICaseMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/resource/ICaseMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IAccountMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IAccountMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IConfigMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IConfigMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IDeviceTokenMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IDeviceTokenMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IModuleMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IModuleMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/company/MessageEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/company/MessageEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/company/ProductEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/company/ProductEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/AnswerEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/AnswerEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/CollectionEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/CollectionEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/CommentEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/CommentEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DiagnoseEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DiagnoseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DoctorEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DoctorEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DoctorInfoEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/DoctorInfoEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/PatientEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/PatientEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/ReservationEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/doctor/ReservationEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/AddressEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/AddressEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/CaseEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/CaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/DrugEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/resource/DrugEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/AccountEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/AccountEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/ConfigEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/ConfigEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/DeviceTokenEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/DeviceTokenEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/ModuleEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/ModuleEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/UserEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/entity/system/UserEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/Http.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/Http.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/HttpCallback.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/HttpCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/HttpKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/http/HttpKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/ApnsKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/ApnsKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/CollectionKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/CollectionKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/HtmlKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/HtmlKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/JsonObjectMapper$1.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/JsonObjectMapper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/JsonObjectMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/JsonObjectMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/MD5Kit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/MD5Kit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/ModuleEnum.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/ModuleEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/RegKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/RegKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/StrKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/StrKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/UploadKit.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/kits/UploadKit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/Jpush/JpushService.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/Jpush/JpushService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/IChatManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/IChatManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/impl/BaseChatManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/impl/BaseChatManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/impl/ChatManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/chat/impl/ChatManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/IMessageManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/IMessageManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/IProductManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/IProductManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/impl/MessageManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/impl/MessageManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/impl/ProductManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/company/impl/ProductManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IAnswerManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IAnswerManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/ICollectionManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/ICollectionManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/ICommentManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/ICommentManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDiagnoseManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDiagnoseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDoctorInfoManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDoctorInfoManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDoctorManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IDoctorManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IPatientManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IPatientManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IReservationManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/IReservationManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/AnswerManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/AnswerManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/CollectionManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/CollectionManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/CommentManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/CommentManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DiagnoseManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DiagnoseManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DoctorInfoManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DoctorInfoManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DoctorManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/DoctorManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/PatientManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/PatientManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/ReservationManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/doctor/impl/ReservationManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/resource/ICaseManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/resource/ICaseManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/resource/impl/CaseManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/resource/impl/CaseManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IAccountManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IAccountManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IConfigManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IConfigManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IDeviceTokenManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IDeviceTokenManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IModuleManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IModuleManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IUserManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IUserManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/AccountManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/AccountManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/ConfigManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/ConfigManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/DeviceManagerImpl$1.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/DeviceManagerImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/DeviceManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/DeviceManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/ModuleManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/ModuleManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/UserManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/UserManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/build/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/jdbc.properties" afterPath="$PROJECT_DIR$/build/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/applicationContext.xml" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/entity/doctor/PatientEntity.java" afterPath="$PROJECT_DIR$/src/com/zyt/entity/doctor/PatientEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/kits/UploadKit.java" afterPath="$PROJECT_DIR$/src/com/zyt/kits/UploadKit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jdbc.properties" afterPath="$PROJECT_DIR$/src/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhongyiguan.iml" afterPath="$PROJECT_DIR$/zhongyiguan.iml" />
     </list>
     <ignored path="zhongyiguan.iws" />
@@ -339,61 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/AuthAction.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/case.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1691">
-              <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case_detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/case_detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case_form.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/case_form.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="608">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -402,42 +49,96 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="19">
+              <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IUserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.xml">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2413">
-              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+            <state relative-caret-position="266">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserApiTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/UserApiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <marker date="1460385713000" expanded="true" signature="1148:1285" placeholder="UPDATE T_USE... " />
-                <marker date="1460385713000" expanded="true" signature="2017:2274" placeholder="SELECT ID id... T_USER" />
-                <marker date="1460385713000" expanded="true" signature="2361:2395" placeholder="SELECT COUNT... T_USER" />
-                <marker date="1460385713000" expanded="true" signature="2523:2768" placeholder="INSERT INTO T_USER... " />
-                <marker date="1460385713000" expanded="true" signature="2855:3407" placeholder="UPDATE T_USE... " />
-                <marker date="1460385713000" expanded="true" signature="3495:3570" placeholder="SELECT ID FR... T_USER" />
-                <marker date="1460385713000" expanded="true" signature="3638:3681" placeholder="SELECT COUNT... T_USER" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestMappingHandlerAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <file leaf-file-name="UserApi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6365">
-              <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/AuthAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/IndexAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/AccountApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Junit4 Temple" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -452,10 +153,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/zyt/entity/system/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/com/zyt/base/shiro/MyRealm.java" />
-        <option value="$PROJECT_DIR$/src/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/com/zyt/kits/UploadKit.java" />
+        <option value="$PROJECT_DIR$/src/com/zyt/cons/AduitStatus.java" />
+        <option value="$PROJECT_DIR$/src/com/zyt/action/company/MessageAction.java" />
+        <option value="$PROJECT_DIR$/src/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/test/UserApiTest.java" />
+        <option value="$PROJECT_DIR$/src/com/zyt/entity/doctor/PatientEntity.java" />
       </list>
     </option>
   </component>
@@ -470,6 +176,13 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
@@ -504,6 +217,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,24 +237,246 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hamcrest-library-1.3.jar!/" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.hct">
+  <component name="RunManager" selected="JUnit.UserApiTest">
+    <configuration default="false" name="UserApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="zhongyiguan" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.UserApiTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -1040,12 +977,21 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.hct" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserApiTest" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserApiTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1073,47 +1019,95 @@
       <workItem from="1460304985295" duration="278000" />
       <workItem from="1460338950015" duration="1202000" />
       <workItem from="1460385915726" duration="565000" />
-      <workItem from="1460390470751" duration="408000" />
+      <workItem from="1460390470751" duration="671000" />
+      <workItem from="1460433262479" duration="200000" />
+      <workItem from="1460433526597" duration="550000" />
+      <workItem from="1460461124549" duration="852000" />
+      <workItem from="1460519798068" duration="8935000" />
+      <workItem from="1460562134245" duration="485000" />
+      <workItem from="1460612142856" duration="1980000" />
+      <workItem from="1460643081716" duration="641000" />
+      <workItem from="1460651028789" duration="49000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UserApiTest - 2016.04.13 at 22h 50m 47s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.13 at 23h 02m 51s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.13 at 23h 05m 27s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.13 at 23h 07m 17s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 13h 40m 24s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 13h 48m 13s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 14h 24m 02s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 14h 28m 59s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 14h 38m 23s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserApiTest - 2016.04.14 at 14h 42m 23s.xml">
+      <configuration name="UserApiTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22400000" />
+    <option name="totallyTimeSpent" value="36355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22889842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61566263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6012048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48795182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1202,7 +1196,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="13" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1211,215 +1205,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Production.p12">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/restApi.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/entity/system/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/AuthAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/base/shiro/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2069#2070#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Production.p12">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/restApi.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/entity/system/AccountEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Production.p12">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/IUserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/base/AjaxResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/restApi.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.bak.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/base/IBaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/shiro-core-1.2.4.jar!/org/apache/shiro/realm/AuthenticatingRealm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/shiro-core-1.2.4.jar!/org/apache/shiro/authc/pam/ModularRealmAuthenticator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/shiro-core-1.2.4.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1459,13 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/kits/StrKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1513,15 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2413">
           <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
-          <folding>
-            <marker date="1460385713000" expanded="true" signature="1148:1285" placeholder="UPDATE T_USE... " />
-            <marker date="1460385713000" expanded="true" signature="2017:2274" placeholder="SELECT ID id... T_USER" />
-            <marker date="1460385713000" expanded="true" signature="2361:2395" placeholder="SELECT COUNT... T_USER" />
-            <marker date="1460385713000" expanded="true" signature="2523:2768" placeholder="INSERT INTO T_USER... " />
-            <marker date="1460385713000" expanded="true" signature="2855:3407" placeholder="UPDATE T_USE... " />
-            <marker date="1460385713000" expanded="true" signature="3495:3570" placeholder="SELECT ID FR... T_USER" />
-            <marker date="1460385713000" expanded="true" signature="3638:3681" placeholder="SELECT COUNT... T_USER" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1529,15 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6365">
           <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/AuthAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1545,15 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1083">
           <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/case.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1561,7 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1569,7 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
           <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1581,18 +1330,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/zhongyiguan.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/kits/ModuleEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23940">
+          <caret line="1301" column="28" selection-start-line="1301" selection-start-column="28" selection-end-line="1301" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/company/ProductAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/system/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/system/ProfileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/case.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="55" selection-start-line="89" selection-start-column="55" selection-end-line="89" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/ueditor1_4_3/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/patient_form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/resource/patient_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/ueditor1_4_3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/spring-core-4.1.6.RELEASE.jar!/org/springframework/core/io/ResourceLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/spring-core-4.1.6.RELEASE.jar!/org/springframework/core/io/DefaultResourceLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/spring-core-4.1.6.RELEASE.jar!/org/springframework/core/io/ClassPathResource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/javax.servlet-api-3.0.1.jar!/javax/servlet/ServletContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/lib/spring-test-4.1.6.RELEASE.jar!/org/springframework/mock/web/MockServletContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/kits/StrKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/IAccountManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/api/BaseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/kits/UploadKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/cons/AduitStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/company/MessageAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="88" selection-start-line="1" selection-start-column="88" selection-end-line="1" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/AuthAction.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/action/auth/IndexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/AccountApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/entity/doctor/PatientEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/UserApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
