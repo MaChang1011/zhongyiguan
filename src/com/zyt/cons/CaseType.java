@@ -1,35 +1,36 @@
 package com.zyt.cons;
 
-public enum CaseType
-{
-  JDAL(10, "经典案例"),  XXZJ(10, "心血之家");
-  
+/**
+ * Author: @author HYS . <br>
+ * Date: 2015-9-20 涓嬪崍8:56:13 . <br>
+ * Function: 妗堜緥鍒嗙被
+ */
+public enum CaseType {
+  JDAL(10, "缁忓吀妗堜緥"),
+
+  XXZJ(20, "蹇冭涔嬪");
+
   private int type;
   private String descr;
-  
-  private CaseType(int type, String descr)
-  {
+
+  private CaseType(int type, String descr) {
     this.type = type;
     this.descr = descr;
   }
-  
-  public String getDescr()
-  {
-    return this.descr;
+
+  public String getDescr() {
+    return descr;
   }
-  
-  public int getType()
-  {
-    return this.type;
+
+  public int getType() {
+    return type;
   }
-  
-  public void setDescr(String descr)
-  {
+
+  public void setDescr(String descr) {
     this.descr = descr;
   }
-  
-  public void setType(int type)
-  {
+
+  public void setType(int type) {
     this.type = type;
   }
 }

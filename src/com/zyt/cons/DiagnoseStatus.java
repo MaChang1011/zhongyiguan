@@ -1,35 +1,33 @@
 package com.zyt.cons;
 
-public enum DiagnoseStatus
-{
-  WAIT_ANSWER(1, "´ı»Ø¸´"),  WAIT_COMMENT(2, "ÒÑ»Ø¸´"),  COMPLETE(3, "ÒÑÆÀ¼Û");
-  
+public enum DiagnoseStatus {
+  WAIT_ANSWER(1, "å¾…å›å¤"),
+
+  WAIT_COMMENT(2, "å·²å›å¤"),
+
+  COMPLETE(3, "å·²è¯„ä»·");
+
   private int status;
   private String msg;
-  
-  private DiagnoseStatus(int status, String msg)
-  {
+
+  private DiagnoseStatus(int status, String msg) {
     this.status = status;
     this.msg = msg;
   }
-  
-  public String getMsg()
-  {
-    return this.msg;
+
+  public String getMsg() {
+    return msg;
   }
-  
-  public int getStatus()
-  {
-    return this.status;
+
+  public int getStatus() {
+    return status;
   }
-  
-  public void setMsg(String msg)
-  {
+
+  public void setMsg(String msg) {
     this.msg = msg;
   }
-  
-  public void setStatus(int status)
-  {
+
+  public void setStatus(int status) {
     this.status = status;
   }
 }

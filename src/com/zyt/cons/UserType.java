@@ -1,35 +1,45 @@
 package com.zyt.cons;
 
-public enum UserType
-{
-  ADMIN(2, "¹ÜÀíÔ±"),  DOCTOR(1, "Ò½Éú"),  PATIENT(0, "»¼Õß");
-  
+/**
+ * Author: @author HYS . <br>
+ * Date: 2015-9-20 ä¸‹åˆ5:45:59 . <br>
+ * Function: ç”¨æˆ·ç±»å‹
+ */
+public enum UserType {
+
+  ADMIN(2, "ç®¡ç†å‘˜"),
+
+  DOCTOR(1, "åŒ»ç”Ÿ"),
+
+  PATIENT(0, "æ‚£è€…");
+
+  /**
+   * @Fields : ç±»å‹
+   */
   private int type;
+  /**
+   * @Fields : æè¿°
+   */
   private String descr;
-  
-  private UserType(int type, String descr)
-  {
+
+  private UserType(int type, String descr) {
     this.type = type;
     this.descr = descr;
   }
-  
-  public String getDescr()
-  {
-    return this.descr;
+
+  public String getDescr() {
+    return descr;
   }
-  
-  public int getType()
-  {
-    return this.type;
+
+  public int getType() {
+    return type;
   }
-  
-  public void setDescr(String descr)
-  {
+
+  public void setDescr(String descr) {
     this.descr = descr;
   }
-  
-  public void setType(int type)
-  {
+
+  public void setType(int type) {
     this.type = type;
   }
 }

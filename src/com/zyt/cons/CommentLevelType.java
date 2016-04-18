@@ -1,35 +1,38 @@
 package com.zyt.cons;
 
-public enum CommentLevelType
-{
-  PERFECT(1, "ºÜÂúÒâ"),  GOOD(2, "ÂúÒâ"),  UNSATISFY(3, "²»ÂúÒâ");
-  
+/**
+ * Author: @author HYS . <br>
+ * Date: 2015-10-7 ä¸‹åˆ9:12:55 . <br>
+ * Function: è¯„è®ºç­‰çº§
+ */
+public enum CommentLevelType {
+  PERFECT(1, "å¾ˆæ»¡æ„"),
+
+  GOOD(2, "æ»¡æ„"),
+
+  UNSATISFY(3, "ä¸æ»¡æ„");
+
   private int status;
   private String msg;
-  
-  private CommentLevelType(int status, String msg)
-  {
+
+  private CommentLevelType(int status, String msg) {
     this.status = status;
     this.msg = msg;
   }
-  
-  public String getMsg()
-  {
-    return this.msg;
+
+  public String getMsg() {
+    return msg;
   }
-  
-  public int getStatus()
-  {
-    return this.status;
+
+  public int getStatus() {
+    return status;
   }
-  
-  public void setMsg(String msg)
-  {
+
+  public void setMsg(String msg) {
     this.msg = msg;
   }
-  
-  public void setStatus(int status)
-  {
+
+  public void setStatus(int status) {
     this.status = status;
   }
 }

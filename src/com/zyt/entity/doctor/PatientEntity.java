@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zyt.base.BaseEntity;
-
+import com.google.gson.annotations.Expose;
 
 /**
  * @author ljw
@@ -18,17 +18,17 @@ public class PatientEntity
   protected int id;
 
 	private int userid;
-
+  
   private String name;
-
+  
   private String address;
 
   private Timestamp pubtime;
-
+  
   private String images;
   //ҩƷ�ַ���
   private String drug;
-
+  
   private float money;
   //������
   private String orderid;
@@ -38,7 +38,7 @@ public class PatientEntity
   private int status_zf;
 
   private int age;
-
+  
   private String sex;
   
   private int is_hy;

@@ -23,10 +23,11 @@
 		<property name="basePackage" value="com.zyt.dao.*" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
-	
+
+
     <bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">  
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/Test?useUnicode=true&amp;characterEncoding=UTF8"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/Test?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false"/>
         <property name="user" value="root"/>
         <property name="password" value="123456"/>
     </bean>
