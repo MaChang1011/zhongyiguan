@@ -77,6 +77,7 @@
           <element id="library" level="module" name="spring-webmvc-4.1.6.RELEASE.jar" module-name="zhongyiguan" />
           <element id="library" level="module" name="ueditor-1.1.1.jar" module-name="zhongyiguan" />
           <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.18.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../health/target/web/WEB-INF/lib/junit-4.12.jar" />
         </element>
       </element>
     </root>

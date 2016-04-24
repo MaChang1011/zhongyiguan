@@ -24,5 +24,5 @@ public abstract interface IUserMapper
    * @Title : findDoctorCheck
    * @Description : 检查是否审核
    */
-  List<DoctorEntity> findDoctorCheck(String mobile);
+  public abstract List<DoctorEntity> findDoctorCheck(String mobile);
 }
