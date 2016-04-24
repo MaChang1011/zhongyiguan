@@ -38,7 +38,17 @@ public class UserApi
   @Autowired
   private IPatientManager patientManager;
 
-  
+  /**
+   * @Title : newauth
+   * @Function: 添加医生审核
+   */
+  @ResponseBody
+  @RequestMapping(value ="/newauth",method ={org.springframework.web.bind.annotation.RequestMethod.POST})
+  public ApiResult newauth(@RequestParam String mobile)
+  {
+    return userManager.authDoctor(mobile);
+  }
+
   //验证登录
   @ResponseBody
   @RequestMapping(value={"/auth"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -46,7 +56,7 @@ public class UserApi
   {
     return this.userManager.authUser(user);
   }
-  
+
   //更换密码
   @ResponseBody
   @RequestMapping(value={"/change_psw"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -54,7 +64,7 @@ public class UserApi
   {
     return this.userManager.changePsw(userid, oldPwd, newPwd);
   }
-  
+
   //获得用户所有信息
   @ResponseBody
   @RequestMapping(value={"/get/{userid}"}, method={org.springframework.web.bind.annotation.RequestMethod.GET})
@@ -62,21 +72,21 @@ public class UserApi
   {
     return (UserEntity)this.userManager.findById(userid);
   }
-  
+
   @ResponseBody
   @RequestMapping(value={"/get_detail/{userid}"}, method={org.springframework.web.bind.annotation.RequestMethod.GET})
   public DoctorEntity getDetail(@PathVariable String userid)
   {
     return this.doctorManager.findById(userid);
   }
-  
+
   @ResponseBody
   @RequestMapping(value={"/get_detail_patient/{userid}"}, method={org.springframework.web.bind.annotation.RequestMethod.GET})
   public PatientEntity getDetailPatient(@PathVariable String userid)
   {
     return this.patientManager.findById(userid);
   }
-  
+
   @ResponseBody
   @RequestMapping(value={"/improve"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
   public ApiResult improve(@RequestParam int userid, @ModelAttribute DoctorEntity entity)
@@ -85,7 +95,7 @@ public class UserApi
     entity.setNickname(this.request.getParameter("nickname"));
     return this.doctorManager.saveOrUpdate(entity);
   }
-  
+
   //处方状态改变接口
   @ResponseBody
   @RequestMapping(value={"/updateRecipe"},method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -96,7 +106,7 @@ public class UserApi
 	  this.patientManager.Update(entity);
 	  //获取User的Mobile字段作为推送的alias
 	  PatientEntity p = this.patientManager.findById(String.valueOf(id));
-	  String uid = String.valueOf(p.getUserid()); 
+	  String uid = String.valueOf(p.getUserid());
 	  UserEntity u = this.userManager.findById(uid);
 	  String mobile = u.getMobile();
 	  //检查通过的订单推送
@@ -107,7 +117,7 @@ public class UserApi
 		  }
 	  return new ApiResult(ApiStatus.SUCCESS, "操作成功");
   }
-  
+
   //处方输入接口
   @ResponseBody
   @RequestMapping(value={"/recipeInput"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -117,26 +127,26 @@ public class UserApi
     this.patientManager.saveOrUpdate(entity);
     return new ApiResult(ApiStatus.SUCCESS, "操作成功");
   }
-  
+
   //处方上传接口
   /**
  *@Method recipeUpfile
  *@Date 2016年3月14日
- *@param int userid,PatientEntity实体,file数组
+ *@param : userid,PatientEntity实体,file数组
  *@Return ApiResult 返回ApiResult结果
- *@throws 
+ *@throws
  *@EnclosingType UserApi
  */
   @ResponseBody
   @RequestMapping(value={"/recipeUpfile"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
-  public ApiResult recipeUpfile(HttpServletRequest request, @RequestParam int userid, 
+  public ApiResult recipeUpfile(HttpServletRequest request, @RequestParam int userid,
 		  @ModelAttribute PatientEntity entity, @RequestParam MultipartFile[] file)
   {
 	ApiResult apiResult = new ApiResult(ApiStatus.FAILED);
 	/*
 	 * 改为时间毫秒存储图片名   改动位置：com.zyt.kits.UploadKit  58行位置
 	 * */
-    String path = UploadKit.filesUpload(request, String.valueOf(userid), file); 
+    String path = UploadKit.filesUpload(request, String.valueOf(userid), file);
        if (!StrKit.isBlank(path))
         {
           apiResult.setResult(ApiStatus.SUCCESS);
@@ -144,22 +154,22 @@ public class UserApi
 		  entity.setDrug(path);
 		  entity.setUserid(userid);
 		  this.patientManager.saveOrUpdate(entity);
-        } 
+        }
         else
         {
           apiResult.setMsg("上传出错");
         }
-    
+
     return apiResult;
   }
-  
+
   //获取处方确认列表
   /**
  *@Method list
  *@Date 2016年3月14日
- *@param 
+ *@param
  *@Return List<PatientEntity> 获取所有处方列表
- *@throws 
+ *@throws
  *@EnclosingType UserApi
  */
   @ResponseBody
@@ -170,15 +180,15 @@ public class UserApi
     PageQuery<PatientEntity> result = this.patientManager.findPageBo(page);
     return result.getList();
   }
-  
+
 //获取我的通过处方列表
-  
+
   /**
  *@Method mylistIsPass
  *@Date 2016年3月14日
- *@param String userid,int start
+ *@param: String userid,int start
  *@Return List<PatientEntity> 获取我的通过处方列表
- *@throws 
+ *@throws
  *@EnclosingType UserApi
  */
   @ResponseBody
@@ -194,14 +204,14 @@ public class UserApi
     PageQuery<PatientEntity> result = this.patientManager.findPageBoIsPass(page);
     return result.getList();
   }
-  
+
   //获取我的处方列表
   /**
  *@Method mylist
  *@Date 2016年3月14日
- *@param String userid 处方列表中的userid,int start 初始位置
+ *@param: String userid 处方列表中的userid,int start 初始位置
  *@Return List<PatientEntity>  获取我的处方 所有列表
- *@throws 
+ *@throws
  *@EnclosingType UserApi
  */
   @ResponseBody
@@ -217,14 +227,14 @@ public class UserApi
     PageQuery<PatientEntity> result = this.patientManager.findPageBo(page);
     return result.getList();
   }
-  
+
   //获取处方详情
   /**
  *@Method recipeGet
  *@Date 2016年3月14日
- *@param String id  处方的ID
+ *@param: String id  处方的ID
  *@Return PatientEntity  获取处方的详情
- *@throws 
+ *@throws
  *@EnclosingType UserApi
  */
   @ResponseBody
@@ -233,7 +243,7 @@ public class UserApi
   {
     return (PatientEntity)this.patientManager.findById(id);
   }
-  
+
   //用户注册
   @ResponseBody
   @RequestMapping(value={"/register"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -241,7 +251,7 @@ public class UserApi
   {
     return this.userManager.saveRegister(user);
   }
-  
+
   //用户更新
   @ResponseBody
   @RequestMapping(value={"/update"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -250,7 +260,7 @@ public class UserApi
     entity.setId(userid);
     return this.userManager.update(entity);
   }
-  
+
   //上传文件通用接口
   @ResponseBody
   @RequestMapping(value={"/upfile"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
@@ -269,14 +279,14 @@ public class UserApi
     }
     return apiResult;
   }
-  
+
   //上传头像通用接口
   @ResponseBody
   @RequestMapping(value={"/upload_head"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
   public ApiResult uploadHead(HttpServletRequest request, @RequestParam int userid, @RequestParam MultipartFile head)
   {
     ApiResult apiResult = new ApiResult(ApiStatus.FAILED);
-    String path = UploadKit.uploadHead(request, String.valueOf(userid), 
+    String path = UploadKit.uploadHead(request, String.valueOf(userid),
       head);
     if (!StrKit.isBlank(path))
     {

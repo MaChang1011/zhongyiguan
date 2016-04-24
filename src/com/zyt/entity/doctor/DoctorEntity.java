@@ -3,9 +3,7 @@ package com.zyt.entity.doctor;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zyt.base.BaseEntity;
 
-/*
- * 医生实体类
- * */
+
 public class DoctorEntity
   extends BaseEntity
 {
@@ -27,6 +25,14 @@ public class DoctorEntity
   private int age;
   private int workYear;
   private String goodAt;
+  /**
+   * @Fields : 鏄惁瀹℃牳
+   */
+  private int d_check;
+
+  public int getD_check(){return this.d_check;}
+
+  public void setD_check(int d_check){ this.d_check=d_check;}
   
   public int getId()
   {
@@ -167,82 +173,6 @@ public class DoctorEntity
   {
     this.goodAt = goodAt;
   }
-  
-  public String toString()
-  {
-    return "DoctorEntity(id=" + getId() + ", userid=" + getUserid() + ", name=" + getName() + ", nickname=" + getNickname() + ", sex=" + getSex() + ", card=" + getCard() + ", company=" + getCompany() + ", job=" + getJob() + ", techTitle=" + getTechTitle() + ", profile=" + getProfile() + ", department=" + getDepartment() + ", age=" + getAge() + ", workYear=" + getWorkYear() + ", goodAt=" + getGoodAt() + ")";
-  }
-  
-  public boolean equals(Object o)
-  {
-    if (o == this) {
-      return true;
-    }
-    if (!(o instanceof DoctorEntity)) {
-      return false;
-    }
-    DoctorEntity other = (DoctorEntity)o;
-    if (!other.canEqual(this)) {
-      return false;
-    }
-    if (getId() != other.getId()) {
-      return false;
-    }
-    if (getUserid() != other.getUserid()) {
-      return false;
-    }
-    Object this$name = getName();Object other$name = other.getName();
-    if (this$name == null ? other$name != null : !this$name.equals(other$name)) {
-      return false;
-    }
-    Object this$nickname = getNickname();Object other$nickname = other.getNickname();
-    if (this$nickname == null ? other$nickname != null : !this$nickname.equals(other$nickname)) {
-      return false;
-    }
-    if (getSex() != other.getSex()) {
-      return false;
-    }
-    Object this$card = getCard();Object other$card = other.getCard();
-    if (this$card == null ? other$card != null : !this$card.equals(other$card)) {
-      return false;
-    }
-    Object this$company = getCompany();Object other$company = other.getCompany();
-    if (this$company == null ? other$company != null : !this$company.equals(other$company)) {
-      return false;
-    }
-    Object this$job = getJob();Object other$job = other.getJob();
-    if (this$job == null ? other$job != null : !this$job.equals(other$job)) {
-      return false;
-    }
-    Object this$techTitle = getTechTitle();Object other$techTitle = other.getTechTitle();
-    if (this$techTitle == null ? other$techTitle != null : !this$techTitle.equals(other$techTitle)) {
-      return false;
-    }
-    Object this$profile = getProfile();Object other$profile = other.getProfile();
-    if (this$profile == null ? other$profile != null : !this$profile.equals(other$profile)) {
-      return false;
-    }
-    Object this$department = getDepartment();Object other$department = other.getDepartment();
-    if (this$department == null ? other$department != null : !this$department.equals(other$department)) {
-      return false;
-    }
-    if (getAge() != other.getAge()) {
-      return false;
-    }
-    if (getWorkYear() != other.getWorkYear()) {
-      return false;
-    }
-    Object this$goodAt = getGoodAt();Object other$goodAt = other.getGoodAt();return this$goodAt == null ? other$goodAt == null : this$goodAt.equals(other$goodAt);
-  }
-  
-  protected boolean canEqual(Object other)
-  {
-    return other instanceof DoctorEntity;
-  }
-  
-  public int hashCode()
-  {
-    int PRIME = 59;int result = 1;result = result * 59 + getId();result = result * 59 + getUserid();Object $name = getName();result = result * 59 + ($name == null ? 0 : $name.hashCode());Object $nickname = getNickname();result = result * 59 + ($nickname == null ? 0 : $nickname.hashCode());result = result * 59 + getSex();Object $card = getCard();result = result * 59 + ($card == null ? 0 : $card.hashCode());Object $company = getCompany();result = result * 59 + ($company == null ? 0 : $company.hashCode());Object $job = getJob();result = result * 59 + ($job == null ? 0 : $job.hashCode());Object $techTitle = getTechTitle();result = result * 59 + ($techTitle == null ? 0 : $techTitle.hashCode());Object $profile = getProfile();result = result * 59 + ($profile == null ? 0 : $profile.hashCode());Object $department = getDepartment();result = result * 59 + ($department == null ? 0 : $department.hashCode());result = result * 59 + getAge();result = result * 59 + getWorkYear();Object $goodAt = getGoodAt();result = result * 59 + ($goodAt == null ? 0 : $goodAt.hashCode());return result;
-  }
+
 }
 

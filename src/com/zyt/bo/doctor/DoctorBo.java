@@ -19,6 +19,14 @@ public class DoctorBo
   private int workYear;
   private String goodAt;
   private int follows;
+  /**
+   * @Fields : 是否审核
+   */
+  private int d_check;
+
+  public int getD_check(){return this.d_check;}
+
+  public void setD_check(int d_check){ this.d_check=d_check;}
   
   public int getId()
   {

@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>好心人后台管理系统</title>
+		<title>合草堂后台管理系统</title>
 		<!-- Bootstrap -->
 		<link href="${ctx}/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link href="${ctx}/static/styles.css" rel="stylesheet">

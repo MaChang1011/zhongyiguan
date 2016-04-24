@@ -13,7 +13,8 @@
 			AGE age,
 			WORK_YEAR workYear,
 			GOOD_AT goodAt,
-			PROFILE profile
+			PROFILE profile,
+			D_CHECK d_check
 		FROM T_DOCTOR
 		WHERE USERID = #{id, jdbcType=INTEGER}
 	</select>
@@ -22,7 +23,7 @@
 		parameterType="com.zyt.entity.doctor.DoctorEntity">
 		INSERT INTO T_DOCTOR (
 			USERID, SEX, CARD, COMPANY, DEPARTMENT, JOB, TECH_TITLE, PROFILE,
-			AGE, WORK_YEAR, GOOD_AT
+			AGE, WORK_YEAR, GOOD_AT, D_CHECK
 		) VALUES (
 			#{userid, jdbcType=VARCHAR}, 
 			#{sex, jdbcType=VARCHAR},
@@ -34,7 +35,8 @@
 			#{profile, jdbcType=VARCHAR},
 			#{age, jdbcType=INTEGER},
 			#{workYear, jdbcType=INTEGER},
-			#{goodAt, jdbcType=VARCHAR}
+			#{goodAt, jdbcType=VARCHAR},
+			0;
 		)
 	</insert>
 	
@@ -77,6 +79,19 @@
 		</trim>
 		WHERE USERID = #{userid, jdbcType=INTEGER}
 	</update>
+
+
+	<update id="updateCheck" parameterType="com.zyt.entity.doctor.DoctorEntity">
+		UPDATE T_DOCTOR d
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="d_check!=null and d_check!=''">
+				D_CHECK = #{d_check, jdbcType=VARCHAR},
+			</if>
+		</trim>
+		WHERE d.USERID = #{id, jdbcType=INTEGER}
+	</update>
+
+
 	<select id="findDetailById" parameterType="string"
 		resultType="com.zyt.bo.doctor.DoctorBo">
 		SELECT
@@ -100,34 +115,104 @@
 		JOIN T_USER u on d.USERID = u.id
 		WHERE d.USERID = #{id, jdbcType=INTEGER}
 	</select>
+
 	<select id="findPageBo" parameterType="hashmap"
-		resultType="com.zyt.bo.doctor.DoctorBo">
+			resultType="com.zyt.bo.doctor.DoctorBo">
 		SELECT
-			u.ID id,
-			d.SEX sex,
-			d.CARD card,
-			d.COMPANY company,
-			d.DEPARTMENT department,
-			d.JOB job,
-			d.TECH_TITLE techTitle,
-			u.HEAD head,
-			u.NAME name,
-			u.LEVEL level,
-			d.START_TIME startTime,
-			d.END_TIME endTime,
-			d.day_of_week dayOfWeek,
-			d.LOCATION location,
-			d.AGE age,
-			d.WORK_YEAR workYear,
-			d.GOOD_AT goodAt,
-			IF(tmp.FOLLOWS, tmp.FOLLOWS, 0) follows
-			<if test="userId!=null and userId!=''">
-				,IF(c.ID > 0, 1, 0) isCollection
-			</if>
+		u.ID id,
+		d.SEX sex,
+		d.CARD card,
+		d.COMPANY company,
+		d.DEPARTMENT department,
+		d.JOB job,
+		d.TECH_TITLE techTitle,
+		u.HEAD head,
+		u.NAME name,
+		u.LEVEL level,
+		d.START_TIME startTime,
+		d.END_TIME endTime,
+		d.day_of_week dayOfWeek,
+		d.LOCATION location,
+		d.AGE age,
+		d.WORK_YEAR workYear,
+		d.GOOD_AT goodAt,
+		d.D_CHECK d_check,
+		IF(tmp.FOLLOWS, tmp.FOLLOWS, 0) follows
+		<if test="userId!=null and userId!=''">
+			,IF(c.ID > 0, 1, 0) isCollection
+		</if>
 		FROM T_USER u
 		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
 		LEFT JOIN (
-			SELECT c.RECORD_ID, COUNT(c.ID) AS FOLLOWS FROM T_COLLECTION c WHERE c.TYPE = 3 GROUP BY  c.TYPE,  c.RECORD_ID
+		SELECT c.RECORD_ID, COUNT(c.ID) AS FOLLOWS FROM T_COLLECTION c WHERE c.TYPE = 3 GROUP BY  c.TYPE,  c.RECORD_ID
+		) tmp ON u.ID=tmp.RECORD_ID
+		<if test="online!=null and online!=''">
+			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
+		</if>
+		<if test="userId!=null and userId!=''">
+			LEFT JOIN T_COLLECTION c ON u.ID = c.RECORD_ID
+			AND c.TYPE = 3 AND c.USER_ID= #{userId, jdbcType=INTEGER}
+		</if>
+		WHERE u.TYPE = 1
+		AND d.d_check = 1
+		AND d.START_TIME is not null
+		AND d.END_TIME is not null
+		AND d.DAY_OF_WEEK is not null
+		<if test="online!=null and online!=''">
+			AND info.STATUS = 1
+		</if>
+		ORDER BY u.REGTIME DESC
+		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
+	</select>
+
+	<select id="findAllCount" parameterType="hashmap"
+		resultType="int">
+		SELECT 
+			COUNT(u.ID)
+		FROM T_USER u
+		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
+		<if test="online!=null and online!=''">
+			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
+		</if>
+		WHERE u.TYPE=1
+		AND d.START_TIME is not null
+		AND d.END_TIME is not null
+		AND d.DAY_OF_WEEK is not null
+		<if test="online!=null and online!=''">
+			AND info.STATUS = 1
+		</if>
+	</select>
+
+	<select id="findPageBoUncheck" parameterType="hashmap"
+			resultType="com.zyt.bo.doctor.DoctorBo">
+		SELECT
+		u.ID id,
+		d.ID id,
+		d.SEX sex,
+		d.CARD card,
+		d.COMPANY company,
+		d.DEPARTMENT department,
+		d.JOB job,
+		d.TECH_TITLE techTitle,
+		u.HEAD head,
+		u.NAME name,
+		u.LEVEL level,
+		d.START_TIME startTime,
+		d.END_TIME endTime,
+		d.day_of_week dayOfWeek,
+		d.LOCATION location,
+		d.AGE age,
+		d.WORK_YEAR workYear,
+		d.GOOD_AT goodAt,
+		d.D_CHECK d_check,
+		IF(tmp.FOLLOWS, tmp.FOLLOWS, 0) follows
+		<if test="userId!=null and userId!=''">
+			,IF(c.ID > 0, 1, 0) isCollection
+		</if>
+		FROM T_USER u
+		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
+		LEFT JOIN (
+		SELECT c.RECORD_ID, COUNT(c.ID) AS FOLLOWS FROM T_COLLECTION c WHERE c.TYPE = 3 GROUP BY  c.TYPE,  c.RECORD_ID
 		) tmp ON u.ID=tmp.RECORD_ID
 		<if test="online!=null and online!=''">
 			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
@@ -146,24 +231,7 @@
 		ORDER BY u.REGTIME DESC
 		LIMIT #{start, jdbcType=INTEGER}, #{limit, jdbcType=INTEGER}
 	</select>
-	<select id="findAllCount" parameterType="hashmap"
-		resultType="int">
-		SELECT 
-			COUNT(u.ID)
-		FROM T_USER u
-		LEFT JOIN T_DOCTOR d ON d.USERID = u.ID
-		<if test="online!=null and online!=''">
-			JOIN T_DOCTOR_INFO info ON info.DOCTOR_ID = u.ID
-		</if>
-		WHERE u.TYPE=1
-		AND d.START_TIME is not null
-		AND d.END_TIME is not null
-		AND d.DAY_OF_WEEK is not null
-		<if test="online!=null and online!=''">
-			AND info.STATUS = 1
-		</if>
-	</select>
-	
+
 	<update id="updateReservation" parameterType="com.zyt.bo.doctor.ReservationBo">
 		UPDATE T_DOCTOR 
 		<trim prefix="SET" suffixOverrides=",">

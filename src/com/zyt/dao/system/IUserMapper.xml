@@ -42,6 +42,19 @@
 			AND PASSWORD = #{password, jdbcType=VARCHAR}
 		</where>
 	</select>
+
+	<select id="findDoctorCheck" parameterType="String"
+			resultType="com.zyt.entity.doctor.DoctorEntity">
+		SELECT
+		u.ID id,
+		u.MOBILE mobile,
+		d.D_CHECK d_check
+		FROM T_User u
+		JOIN T_DOCTOR d ON d.USERID = u.ID
+		WHERE
+		u.MOBILE = #{mobile, jdbcType=VARCHAR}
+		AND d.D_CHECK = 1
+	</select>
 	
 	<update id="updatePwd" parameterType="hashmap">
 		UPDATE T_USER SET PASSWORD=#{newPwd, jdbcType=VARCHAR}
