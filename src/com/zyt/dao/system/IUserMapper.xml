@@ -61,6 +61,11 @@
 		WHERE PASSWORD = #{oldPwd, jdbcType=VARCHAR} 
 		AND ID = #{id, jdbcType=INTEGER}
 	</update>
+
+	<update id="resetPwd" parameterType="hashmap">
+		UPDATE T_USER SET PASSWORD=#{newPwd, jdbcType=VARCHAR}
+		WHERE MOBILE = #{mobile, jdbcType=VARCHAR}
+	</update>
 	
 	<select id="findByCond" parameterType="hashmap"
 		resultType="com.zyt.entity.system.UserEntity">

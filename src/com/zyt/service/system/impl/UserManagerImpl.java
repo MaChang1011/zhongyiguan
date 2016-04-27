@@ -101,6 +101,29 @@ class UserManagerImpl implements IUserManager {
         return apiResult;
     }
 
+    /**
+     * 新增Service
+    * @Function:重置密码,前端验证码验证
+     * @Arguments:String mobile,String newPwd
+     *
+    * */
+    @Override
+    public ApiResult resetPwd(String mobile,String newPwd)
+    {
+        ApiResult apiResult = new ApiResult();
+        Map<String, Object> params = Maps.newHashMap();
+        params.put("mobile",mobile);
+        params.put("newPwd",MD5Kit.encrypt(newPwd));
+        if (userMapper.resetPwd(params) == 1) {
+            apiResult.setResult(ApiStatus.SUCCESS);
+            apiResult.setMsg("重置密码成功");
+        } else {
+            apiResult.setResult(ApiStatus.FAILED);
+            apiResult.setMsg("重置密码失败");
+        }
+        return apiResult;
+
+    }
     /*
      * (non-Javadoc)
      *

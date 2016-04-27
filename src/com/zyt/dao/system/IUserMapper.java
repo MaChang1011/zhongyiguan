@@ -25,4 +25,10 @@ public abstract interface IUserMapper
    * @Description : 检查是否审核
    */
   public abstract List<DoctorEntity> findDoctorCheck(String mobile);
+
+  /**
+   * @Title : resetPwd
+   * @Description : 重置密码
+   */
+  int resetPwd(Map<String, Object> paramMap);
 }

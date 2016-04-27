@@ -68,4 +68,11 @@ public interface IUserManager extends IBaseManager<UserEntity> {
    * @Description : 验证医生
    */
   ApiResult authDoctor(String mobile);
+
+  /**
+   * @Function: 重置密码
+   * @Arguments: String mobile,String newPwd
+   * @Description: 前端处理验证码的问题
+  * */
+  ApiResult resetPwd(String mobile,String newPwd);
 }

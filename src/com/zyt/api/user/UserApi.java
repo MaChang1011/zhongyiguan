@@ -4,6 +4,8 @@ package com.zyt.api.user;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.POST;
+
 import com.zyt.api.BaseApi;
 import com.zyt.base.ApiResult;
 import com.zyt.base.PageQuery;
@@ -49,6 +51,17 @@ public class UserApi
     return userManager.authDoctor(mobile);
   }
 
+  /**
+   * @Title : resetPwd
+   * @Function : 重置密码,验证码验证前端处理
+   * @Arguments: String mobile,String newPwd
+  * */
+  @ResponseBody
+  @RequestMapping(value = "/resetPwd",method={org.springframework.web.bind.annotation.RequestMethod.POST} )
+  public ApiResult resetPwd(@RequestParam String mobile,@RequestParam String newPwd)
+  {
+    return this.userManager.resetPwd(mobile,newPwd);
+  }
   //验证登录
   @ResponseBody
   @RequestMapping(value={"/auth"}, method={org.springframework.web.bind.annotation.RequestMethod.POST})
