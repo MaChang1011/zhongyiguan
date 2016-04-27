@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b692f0e5-465b-4e26-9a20-7075233b03e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zhongyiguan_Web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/api/user/UserApi.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/api/user/UserApi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IUserManager.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/IUserManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/UserManagerImpl.class" afterPath="$PROJECT_DIR$/build/classes/com/zyt/service/system/impl/UserManagerImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/UserApi.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/api/user/UserApi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IUserManager.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/IUserManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/UserManagerImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/service/system/impl/UserManagerImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java" afterPath="$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.java" afterPath="$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.xml" afterPath="$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/service/system/IUserManager.java" afterPath="$PROJECT_DIR$/src/com/zyt/service/system/IUserManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.xml" afterPath="$PROJECT_DIR$/build/classes/com/zyt/dao/system/IUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/zhongyiguan_Web_exploded/WEB-INF/classes/com/zyt/dao/system/IUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.xml" afterPath="$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java" afterPath="$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java" />
     </list>
     <ignored path="zhongyiguan.iws" />
@@ -32,16 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.275862">
-              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyRealm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zyt/base/shiro/MyRealm.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,11 +48,88 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserApi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoctorApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/api/doctor/DoctorApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDoctorManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/service/doctor/IDoctorManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoctorManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/service/doctor/impl/DoctorManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDoctorMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDoctorMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0677966">
+              <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+              <folding>
+                <marker date="1461741120963" expanded="true" signature="309:574" placeholder="SELECT SEX s... T_DOCTOR" />
+                <marker date="1461741120963" expanded="true" signature="704:1202" placeholder="INSERT INTO T_DOCTOR... " />
+                <marker date="1461741120963" expanded="true" signature="1296:2456" placeholder="UPDATE T_DOC... " />
+                <marker date="1461741120963" expanded="true" signature="2550:2760" placeholder="UPDATE T_DOC... " />
+                <marker date="1461741120963" expanded="true" signature="2871:3299" placeholder="SELECT u.ID T_DOCTOR" />
+                <marker date="1461741120963" expanded="true" signature="3407:4684" placeholder="SELECT u.ID T_USER" />
+                <marker date="1461741120963" expanded="true" signature="3988:4098" placeholder="SELECT c.REC... T_COLLECTION" />
+                <marker date="1461741120963" expanded="true" signature="5249:6494" placeholder="SELECT u.ID T_USER" />
+                <marker date="1461741120963" expanded="true" signature="5818:5928" placeholder="SELECT c.REC... T_COLLECTION" />
+                <marker date="1461741120963" expanded="true" signature="6590:7119" placeholder="UPDATE T_DOC... " />
+                <marker date="1461741120963" expanded="true" signature="7234:7390" placeholder="SELECT START... T_DOCTOR" />
+                <marker date="1461741120963" expanded="true" signature="7508:8577" placeholder="SELECT TMP.I... ID" />
+                <marker date="1461741120963" expanded="true" signature="7946:8459" placeholder="SELECT u.ID,... T_DOCTOR" />
+                <marker date="1461741120963" expanded="true" signature="8669:8798" placeholder="SELECT COUNT... T_DOCTOR" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8004484">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding>
                 <element signature="e#2191#2192#0" expanded="true" />
                 <element signature="e#2239#2240#0" expanded="true" />
@@ -77,54 +150,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zyt/cons/UserType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="e#428#429#0" expanded="false" />
-                <element signature="e#450#451#0" expanded="false" />
-                <element signature="e#476#477#0" expanded="false" />
-                <element signature="e#497#498#0" expanded="false" />
-                <element signature="e#537#538#0" expanded="false" />
-                <element signature="e#565#566#0" expanded="false" />
-                <element signature="e#600#601#0" expanded="false" />
-                <element signature="e#626#627#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReservationType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zyt/cons/ReservationType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#286#287#0" expanded="false" />
-                <element signature="e#306#307#0" expanded="false" />
-                <element signature="e#334#335#0" expanded="false" />
-                <element signature="e#357#358#0" expanded="false" />
-                <element signature="e#393#394#0" expanded="false" />
-                <element signature="e#417#418#0" expanded="false" />
-                <element signature="e#456#457#0" expanded="false" />
-                <element signature="e#486#487#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -184,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/com/zyt/service/system/IUserManager.java" />
         <option value="$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java" />
+        <option value="$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.xml" />
       </list>
     </option>
   </component>
@@ -289,84 +315,6 @@
               <option name="myItemId" value="zyt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhongyiguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zyt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -438,6 +386,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhongyiguan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zyt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -448,7 +422,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoshaizi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../health" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -1057,7 +1031,7 @@
       <workItem from="1461521825079" duration="1342000" />
       <workItem from="1461523459854" duration="711000" />
       <workItem from="1461722988010" duration="290000" />
-      <workItem from="1461723329230" duration="7708000" />
+      <workItem from="1461723329230" duration="8338000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA环境更改">
       <created>1460651137753</created>
@@ -1071,7 +1045,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461523161269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加新的接口/resetPwd,前端做验证码验证">
+      <created>1461740551660</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461740551660</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1107,7 +1087,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51082000" />
+    <option name="totallyTimeSpent" value="51712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1122,7 +1102,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74605453" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22258593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2236842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1159,7 +1139,8 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="IDEA环境更改" />
     <MESSAGE value="修正一个小Bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正一个小Bug" />
+    <MESSAGE value="添加新的接口/resetPwd,前端做验证码验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加新的接口/resetPwd,前端做验证码验证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1175,65 +1156,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <marker date="1461736469002" expanded="true" signature="1203:1381" placeholder="SELECT u.ID T_User" />
-            <marker date="1461736469002" expanded="true" signature="1446:1583" placeholder="UPDATE T_USE... " />
-            <marker date="1461736469002" expanded="true" signature="1646:1745" placeholder="UPDATE T_USE... " />
-            <marker date="1461736469002" expanded="true" signature="2477:2734" placeholder="SELECT ID id... T_USER" />
-            <marker date="1461736469002" expanded="true" signature="2821:2855" placeholder="SELECT COUNT... T_USER" />
-            <marker date="1461736469002" expanded="true" signature="2983:3228" placeholder="INSERT INTO T_USER... " />
-            <marker date="1461736469002" expanded="true" signature="3315:3867" placeholder="UPDATE T_USE... " />
-            <marker date="1461736469002" expanded="true" signature="3955:4030" placeholder="SELECT ID FR... T_USER" />
-            <marker date="1461736469002" expanded="true" signature="4098:4141" placeholder="SELECT COUNT... T_USER" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/system/IUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/IUserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/cons/UserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#428#429#0" expanded="false" />
-            <element signature="e#450#451#0" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#497#498#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zyt/cons/ReservationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1569,16 +1491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6030928">
-          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zyt/base/shiro/MyRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1605,8 +1517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zyt/api/user/UserApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8004484">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding>
             <element signature="e#2191#2192#0" expanded="true" />
             <element signature="e#2239#2240#0" expanded="true" />
@@ -1616,6 +1528,71 @@
             <element signature="e#3079#3080#0" expanded="true" />
             <element signature="e#3295#3296#0" expanded="true" />
             <element signature="e#3348#3349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/system/impl/UserManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/api/doctor/DoctorApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/doctor/IDoctorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/service/doctor/impl/DoctorManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyt/dao/doctor/IDoctorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0677966">
+          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <marker date="1461741120963" expanded="true" signature="309:574" placeholder="SELECT SEX s... T_DOCTOR" />
+            <marker date="1461741120963" expanded="true" signature="704:1202" placeholder="INSERT INTO T_DOCTOR... " />
+            <marker date="1461741120963" expanded="true" signature="1296:2456" placeholder="UPDATE T_DOC... " />
+            <marker date="1461741120963" expanded="true" signature="2550:2760" placeholder="UPDATE T_DOC... " />
+            <marker date="1461741120963" expanded="true" signature="2871:3299" placeholder="SELECT u.ID T_DOCTOR" />
+            <marker date="1461741120963" expanded="true" signature="3407:4684" placeholder="SELECT u.ID T_USER" />
+            <marker date="1461741120963" expanded="true" signature="3988:4098" placeholder="SELECT c.REC... T_COLLECTION" />
+            <marker date="1461741120963" expanded="true" signature="5249:6494" placeholder="SELECT u.ID T_USER" />
+            <marker date="1461741120963" expanded="true" signature="5818:5928" placeholder="SELECT c.REC... T_COLLECTION" />
+            <marker date="1461741120963" expanded="true" signature="6590:7119" placeholder="UPDATE T_DOC... " />
+            <marker date="1461741120963" expanded="true" signature="7234:7390" placeholder="SELECT START... T_DOCTOR" />
+            <marker date="1461741120963" expanded="true" signature="7508:8577" placeholder="SELECT TMP.I... ID" />
+            <marker date="1461741120963" expanded="true" signature="7946:8459" placeholder="SELECT u.ID,... T_DOCTOR" />
+            <marker date="1461741120963" expanded="true" signature="8669:8798" placeholder="SELECT COUNT... T_DOCTOR" />
           </folding>
         </state>
       </provider>
