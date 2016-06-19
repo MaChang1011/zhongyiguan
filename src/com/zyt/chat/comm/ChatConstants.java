@@ -13,5 +13,5 @@ public abstract interface ChatConstants
     .getProperty("APP_CLIENT_ID");
   public static final String APP_CLIENT_SECRET = PropertiesUtils.getProperties()
     .getProperty("APP_CLIENT_SECRET");
-  public static final String NAME_PREFIX = "u";
+  public static final String NAME_PREFIX = "userhct";
 }

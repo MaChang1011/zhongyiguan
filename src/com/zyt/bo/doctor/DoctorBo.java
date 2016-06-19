@@ -5,6 +5,7 @@ public class DoctorBo
 {
   private int id;
   private String name;
+  private String nickname;
   private String head;
   private int sex;
   private String card;
@@ -27,6 +28,10 @@ public class DoctorBo
   public int getD_check(){return this.d_check;}
 
   public void setD_check(int d_check){ this.d_check=d_check;}
+
+  public String getNickname(){return this.nickname;}
+
+  public void setNickname(String nickname){this.nickname=nickname;}
   
   public int getId()
   {

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="zhongyiguan:Web">
-    <output-path>$PROJECT_DIR$/out/artifacts/zhongyiguan_Web</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/hct</output-path>
     <root id="archive" name="zhongyiguan_Web.war">
       <element id="artifact" artifact-name="zhongyiguan:Web exploded" />
     </root>

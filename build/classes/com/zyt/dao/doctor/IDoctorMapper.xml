@@ -128,6 +128,7 @@
 		d.TECH_TITLE techTitle,
 		u.HEAD head,
 		u.NAME name,
+		u.NICKNAME nickname,
 		u.LEVEL level,
 		d.START_TIME startTime,
 		d.END_TIME endTime,
